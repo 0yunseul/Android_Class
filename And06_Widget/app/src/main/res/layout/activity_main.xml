@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--gravity(내부 중력, 내부 정렬) :
+    내가 가지고 있는 자식요소를 원하는 방향으로 정렬시킨다.
+     여러 방향을 줄때는 or (|) 사용해서 연결해준다.
+
+      layout_gravity : 나 자신(위젯)이 중력을 가지고 부모로부터
+      위치를 정렬한다. -->
+    <TextView
+        android:id="@+id/text1"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:gravity="top|right"
+        android:layout_gravity="center"
+        android:background="#009688"
+        android:textColor="#FFFFFF"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="텍스트뷰">
+    </TextView>
+    <!--right ==end
+    left == start-->
+    <Button
+        android:textAlignment="textEnd"
+        android:id="@+id/btn1"
+        android:backgroundTint="#72D7CE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="클릭"/>
+
+    <RadioButton
+        android:id="@+id/radio_1"
+        android:text="남"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RadioButton
+        android:id="@+id/radio_2"
+        android:text="여"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rdo_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아주나쁨"/>
+            <RadioButton
+                android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="나쁨"/>
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="보통"/>
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="좋음"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아주 좋음"/>
+    </RadioGroup>
+    <!--사용자의 입력값 받기-->
+    <EditText
+        android:hint="아이디를입력하세요"
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="비밀번호를입력하세요"
+        android:id="@+id/edt_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"/>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <!--태그 변경 시 내부 정렬 규칙이 바뀜-->
+        <!--코드로 버튼 어떻게 넣을까?
+            *버튼 가운데로 넣는거 : center-->
+ <Button
+     android:id="@+id/btn1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerInParent="true"
+     android:backgroundTint="#55EBFF"
+     android:text="버튼1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#072D06"
+        android:text="버튼2"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#033239"
+        android:text="버튼3"
+       android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9C27B0"
+        android:text="버튼4"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:text="버튼5"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#015D69"
+        android:text="버튼6"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+      />
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="버튼7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#DC628C"
+        android:text="버튼8" />
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6C6C6C"
+        android:text="버튼9"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/btn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#AAF5FF"
+        android:text="버튼10"
+        android:layout_alignRight="@id/btn1"
+        android:layout_above="@id/btn1"
+        />
+
+    <Button
+        android:id="@+id/btn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#02E2FF"
+        android:text="버튼11"
+        android:layout_alignRight="@id/btn1"
+        android:layout_below="@id/btn1"
+        />
+
+ <Button
+     android:id="@+id/btn12"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@id/btn1"
+     android:layout_centerInParent="true"
+     android:layout_toLeftOf="@id/btn1"
+     android:backgroundTint="#9C64FF"
+     android:text="버튼12" />
+    <Button
+        android:id="@+id/btn13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="버튼13"
+        android:layout_toRightOf="@id/btn1"
+        android:layout_alignBaseline="@id/btn1"
+        />
+
+
+</RelativeLayout> <!--태그 변경시 그냥 사용할 태그 입력 >자동완성 -->

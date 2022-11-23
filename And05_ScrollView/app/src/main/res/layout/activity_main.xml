@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+                <LinearLayout
+                    android:layout_width="2000dp"
+                    android:layout_height="2000dp"
+                    android:orientation="vertical">
+                <!--*ScrollView의 자식은 반드시 1개 : 여러개 넣고 싶으면 새로 레이아웃-->
+                  <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUTTON"/>
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="안녕하세요."  />
+                 </LinearLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+</LinearLayout>
