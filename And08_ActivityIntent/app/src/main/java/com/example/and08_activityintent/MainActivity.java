@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     LinearLayout ln_layout1;
     LinearLayout ln_layout2;
@@ -65,6 +67,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //MainActivity에서 intent라는 객체를 통해 SubActivity1 띄우기
                 Intent intent = new Intent(MainActivity.this,SubActivity2.class); //현재 activity명시, 다음 activity class명시
+                //subactivity에게 정보를 보내줄 수 있다.
+                //start~전에 담는다(putExtra통해)
+                intent.putExtra( "sVal", "JY");
+                intent.putExtra("iVal",100);
+
+                //MemberDTO를 생성해서 Intent통해 전송하기
+                // String sVal1, String sVal2, String sVal3
+                //serializable상속받았기때문에  --?
+                MemberDTO dto = new MemberDTO("sv1","sv2","sv3");
+                intent.putExtra("dto",dto);
+
+                //MemberDTO 10개를 묵은 ArrayList만들기
+                 ArrayList<MemberDTO> a = new  ArrayList<MemberDTO>();
+                   for(int i = 1; i<10 ; i++){
+                       a.add(new MemberDTO("sv1","sv2","sv3"));
+                   }
+                   //보내기
+                    intent.putExtra("list","값"+dto.getsVal1());
+
                 startActivity(intent); //startActivity : AppCompatActivity를 상속받은 액티비티만 사용 가능하다.
 
 

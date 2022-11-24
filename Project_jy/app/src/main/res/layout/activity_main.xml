@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--스크롤뷰 내 전체 리니어 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/manin_style"
+                android:text="자판기프로그램">
+            </TextView>
+        </LinearLayout><!--상단 제목:자판기프로그램-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#123"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_weight="1"
+            style="@style/img_p"
+            android:src="@drawable/ic_launcher_background"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="상품이름"
+            android:textColor="#FFFFFF"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_order_p1"
+            style="@style/btn_order"
+            android:text="주문하기" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#123"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_weight="1"
+            style="@style/img_p"
+            android:src="@drawable/ic_launcher_background"/>
+        <Button
+            android:id="@+id/btn_order_p2"
+            android:layout_weight="1"
+            style="@style/btn_order"
+            android:text="버튼"  />
+    </LinearLayout><!--상품 이미지+버튼리니어-->
+</LinearLayout><!--상단 상품목록-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#123"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_weight="1"
+                    style="@style/img_p"
+                    android:src="@drawable/ic_launcher_background"/>
+                <Button
+                    android:id="@+id/btn_order_p3"
+                    android:layout_weight="1"
+                    style="@style/btn_order"
+                    android:text="버튼"  />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#123"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_weight="1"
+                    style="@style/img_p"
+                    android:src="@drawable/ic_launcher_background"/>
+                <Button
+                    android:id="@+id/btn_order_p4"
+                    android:layout_weight="1"
+                    style="@style/btn_order"
+                    android:text="버튼"  />
+            </LinearLayout><!--상품 이미지+버튼리니어-->
+        </LinearLayout><!--상단 상품목록-->
+
+ </LinearLayout><!--스크롤뷰 내 전체 리니어 레이아웃-->
+</ScrollView>
+</LinearLayout>
