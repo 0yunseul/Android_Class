@@ -4,7 +4,7 @@
     <style name="manin_style">
         <item name="android:layout_gravity">center</item>
         <item name="android:textSize">20dp</item>
-        <item name="android:textColor">#252424</item>
+        <item name="android:textColor">#2E2E2E</item>
         <item name="android:textAlignment">center</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -12,9 +12,8 @@
     </style>
 <!--타이틀 글씨-->
     <style name="title" parent="manin_style">
-
         <item name="android:padding">20dp</item>
-        <item name="android:background">#808CBC</item>
+        <item name="android:background">#5B9279</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -28,7 +27,7 @@
 
 <!--주문하기 버튼-->
     <style name="btn_order">
-        <item name="backgroundTint">#808CBC</item>
+        <item name="backgroundTint">#958577</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
@@ -38,14 +37,14 @@
     </style>
 <!--금액입력 버튼-->
     <style name="btn_insert" parent="btn_order">
-        <item name="backgroundTint">#5960A6</item>
+        <item name="backgroundTint">#5B9279</item>
     </style>
 
 <!--잔돈반환 버튼-->
     <style name="btn_return" parent="btn_order">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:backgroundTint">#5960A6</item>
+        <item name="android:backgroundTint">#5B9279</item>
         <item name="android:layout_marginTop">30dp</item>
     </style>
 

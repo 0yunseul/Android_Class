@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="#A5AFD4">
+    android:background="#CCBBAC">
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -49,6 +49,7 @@
                 style="@style/manin_style"
                 android:text="800원"/>
             <TextView
+                android:id="@+id/tv_p1_qty"
                 style="@style/manin_style"
                 android:text="n개 남음"/>
             <Button
@@ -73,6 +74,7 @@
                     style="@style/manin_style"
                     android:text="800원"/>
                 <TextView
+                    android:id="@+id/tv_p2_qty"
                     style="@style/manin_style"
                     android:text="n개 남음"/>
                 <Button
@@ -103,6 +105,7 @@
                     style="@style/manin_style"
                     android:text="800원"/>
                 <TextView
+                    android:id="@+id/tv_p3_qty"
                     style="@style/manin_style"
                     android:text="n개 남음"/>
                 <Button
@@ -127,6 +130,7 @@
                     style="@style/manin_style"
                     android:text="800원"/>
                 <TextView
+                    android:id="@+id/tv_p4_qty"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/manin_style"
