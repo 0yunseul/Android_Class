@@ -9,103 +9,133 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<!--스크롤뷰 내 전체 리니어 레이아웃-->
+<!--스크롤뷰 내 전체 리니어 레이아웃 Start : -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
         <LinearLayout
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
-                style="@style/manin_style"
-                android:text="자판기프로그램">
-            </TextView>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:text="자판기프로그램"></TextView>
         </LinearLayout><!--상단 제목:자판기프로그램-->
-
 <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:background="#123"
-        android:orientation="vertical">
-        <ImageView
-            android:layout_weight="1"
-            style="@style/img_p"
-            android:src="@drawable/ic_launcher_background"/>
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="상품이름"
-            android:textColor="#FFFFFF"/>
-        <Button
-            android:layout_weight="1"
-            android:id="@+id/btn_order_p1"
-            style="@style/btn_order"
-            android:text="주문하기" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:background="#123"
-        android:orientation="vertical">
-        <ImageView
-            android:layout_weight="1"
-            style="@style/img_p"
-            android:src="@drawable/ic_launcher_background"/>
-        <Button
-            android:id="@+id/btn_order_p2"
-            android:layout_weight="1"
-            style="@style/btn_order"
-            android:text="버튼"  />
-    </LinearLayout><!--상품 이미지+버튼리니어-->
-</LinearLayout><!--상단 상품목록-->
-
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<!--상단 상품목록 리니어 레이아웃 Start : -->
         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_weight="1"
+                    style="@style/img_p"
+                    android:src="@drawable/img1"/>
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/manin_style"
+                    android:text="콜라 800원"/>
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/manin_style"
+                    android:text="n개 남음"/>
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_order_p1"
+                    style="@style/btn_order"
+                    android:text="주문하기" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_weight="1"
+                style="@style/img_p"
+                android:src="@drawable/img2"/>
+            <TextView
+                android:layout_weight="1"
+                style="@style/manin_style"
+                android:text="사이다 800원"/>
+            <TextView
+                android:layout_weight="1"
+                style="@style/manin_style"
+                android:text="n개 남음"/>
+            <Button
+                android:id="@+id/btn_order_p2"
+                android:layout_weight="1"
+                style="@style/btn_order"
+                android:text="주문하기"  />
+        </LinearLayout><!--상품 이미지+버튼리니어-->
+    </LinearLayout><!--End : 상단 상품목록-->
+<!--하단 상품목록 리니어 레이아웃 Start : -->
+        <LinearLayout
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:background="#123"
-                android:orientation="vertical">
-                <ImageView
+                <LinearLayout
                     android:layout_weight="1"
-                    style="@style/img_p"
-                    android:src="@drawable/ic_launcher_background"/>
-                <Button
-                    android:id="@+id/btn_order_p3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_weight="1"
+                        style="@style/img_p"
+                        android:src="@drawable/img3"/>
+                    <TextView
+                        android:layout_weight="1"
+                        style="@style/manin_style"
+                        android:text="환타 800원"/>
+                    <TextView
+                        android:layout_weight="1"
+                        style="@style/manin_style"
+                        android:text="n개 남음"/>
+                    <Button
+                        android:id="@+id/btn_order_p3"
+                        android:layout_weight="1"
+                        style="@style/btn_order"
+                        android:text="주문하기"  />
+                </LinearLayout>
+                <LinearLayout
                     android:layout_weight="1"
-                    style="@style/btn_order"
-                    android:text="버튼"  />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:background="#123"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_weight="1"
-                    style="@style/img_p"
-                    android:src="@drawable/ic_launcher_background"/>
-                <Button
-                    android:id="@+id/btn_order_p4"
-                    android:layout_weight="1"
-                    style="@style/btn_order"
-                    android:text="버튼"  />
-            </LinearLayout><!--상품 이미지+버튼리니어-->
-        </LinearLayout><!--상단 상품목록-->
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_weight="1"
+                        style="@style/img_p"
+                        android:src="@drawable/img4"/>
+                    <TextView
+                        android:layout_weight="1"
+                        style="@style/manin_style"
+                        android:text="비락식혜 800원"/>
+                    <TextView
+                        android:layout_weight="1"
+                        style="@style/manin_style"
+                        android:text="n개 남음"/>
+                    <Button
+                        android:id="@+id/btn_order_p4"
+                        android:layout_weight="1"
+                        style="@style/btn_order"
+                        android:text="주문하기"   />
+                </LinearLayout><!--상품 이미지+버튼리니어-->
+            </LinearLayout><!--상단 상품목록-->
+ </LinearLayout><!--End : 스크롤뷰 내 전체 리니어 레이아웃-->
+</LinearLayout>
 
- </LinearLayout><!--스크롤뷰 내 전체 리니어 레이아웃-->
 </ScrollView>
 </LinearLayout>
