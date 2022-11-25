@@ -51,7 +51,7 @@
             <TextView
                 android:id="@+id/tv_p1_qty"
                 style="@style/manin_style"
-                android:text="n개 남음"/>
+                android:text=""/>
             <Button
                 android:id="@+id/btn_order_1"
                 style="@style/btn_order"
@@ -159,6 +159,7 @@
             android:orientation="vertical"
             android:layout_weight="7">
             <EditText
+                android:id="@+id/et_insert"
                    android:layout_width="match_parent"
                    android:layout_height="match_parent"
                    android:hint="금액을 입력하세요"/>
@@ -167,9 +168,10 @@
                 android:layout_height="1dp"
                 android:background="#141220"/>
             <TextView
+                android:id="@+id/tv_r_money"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="잔액 : n원"/>
+                android:text="잔액 :"/>
         </LinearLayout>
         <!-- 금액입력버튼-->
             <Button
@@ -184,8 +186,6 @@
         <Button
             android:id="@+id/btn_return"
             style="@style/btn_return"
-
-
             android:text="잔돈 반환"/>
 </LinearLayout>
 </ScrollView>
