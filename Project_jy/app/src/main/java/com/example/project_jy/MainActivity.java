@@ -90,22 +90,38 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
             int price = list.get(0).getPrice();
             int money = m_dto.getMoney()-price;
-            if(qty==0) { //현재수량이 0인경우에
+            if(qty==0) { //현재수량이 0인경우에 주문 불가
                 Toast.makeText(this, "주문불가!", Toast.LENGTH_SHORT).show();
             }else if (money<0){
-                Toast.makeText(this,"잔액부족",Toast.LENGTH_SHORT).show();
-            }else{
-
+                Toast.makeText(this,"잔액부족",Toast.LENGTH_SHORT).show(); //잔액이 0보다 작을때 잔액부족
+            }else{m_dto.setMoney(m_dto.getMoney() - list.get(0).getPrice());
+                list.get(1).setQty(list.get(1).getQty()-1);
+                tv_p2_qty.setText(""+list.get(1).getQty());
+                tv_r_money.setText(""+m_dto.getMoney());
 
             }
-        }//주문하기 버튼2
-        else if (v.getId() ==R.id.btn_order_2){
-
-       }//주문하기 버튼3
-        else if (v.getId() ==R.id.btn_order_3){
-
-        }//주문하기 버튼4
-        else if (v.getId() ==R.id.btn_order_4){
+        }else if (v.getId() == R.id.btn_order_3) {
+            if(list.get(2).getQty()==0) {
+                Toast.makeText(MainActivity.this, "현재 품절 상품입니다.", Toast.LENGTH_SHORT).show();
+            }else if(list.get(2).getPrice() > m_dto.getMoney()){
+                Toast.makeText(MainActivity.this, "잔액이 부족합니다.", Toast.LENGTH_SHORT).show();
+            }else{
+                m_dto.setMoney(m_dto.getMoney() - list.get(2).getPrice());
+                list.get(2).setQty(list.get(2).getQty()-1);
+                tv_p3_qty.setText(""+list.get(2).getQty());
+                tv_r_money.setText(""+m_dto.getMoney());
+            }
+        }else if (v.getId() == R.id.btn_order_4){
+            if(list.get(3).getQty()==0) {
+                Toast.makeText(MainActivity.this, "현재 품절 상품입니다.", Toast.LENGTH_SHORT).show();
+            }else if(list.get(3).getPrice() > m_dto.getMoney()){
+                Toast.makeText(MainActivity.this, "잔액이 부족합니다.", Toast.LENGTH_SHORT).show();
+            }else{
+                m_dto.setMoney(m_dto.getMoney() - list.get(3).getPrice());
+                list.get(3).setQty(list.get(3).getQty()-1);
+                tv_p4_qty.setText(""+list.get(3).getQty());
+                tv_r_money.setText(""+m_dto.getMoney());
+            }
 
 
         }//잔돈반환버튼 클릭시 ->인텐트 적용하여 Result Activity에서 보여준다.
