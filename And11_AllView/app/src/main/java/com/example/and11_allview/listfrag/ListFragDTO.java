@@ -1,12 +1,11 @@
 package com.example.and11_allview.listfrag;
 
 public class ListFragDTO {
-    String name;
-    int sec;
+    String name, other;
 
-    public ListFragDTO(String name, int sec) {
+    public ListFragDTO(String name, String other) {
         this.name = name;
-        this.sec = sec;
+        this.other = other;
     }
 
     public String getName() {
@@ -17,11 +16,11 @@ public class ListFragDTO {
         this.name = name;
     }
 
-    public int getSec() {
-        return sec;
+    public String getOther() {
+        return other;
     }
 
-    public void setSec(int sec) {
-        this.sec = sec;
+    public void setOther(String other) {
+        this.other = other;
     }
 }

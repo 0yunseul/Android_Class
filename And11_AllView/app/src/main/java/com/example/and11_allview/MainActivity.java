@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
-import com.example.and11_allview.listfrag.ListFragmentActivity;
+import com.example.and11_allview.listfrag.ListFragment;
 
 public class MainActivity extends AppCompatActivity {
     /*버튼 초기화*/
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 /*ListFragment(이름)가 container에 붙게*/
-               getSupportFragmentManager().beginTransaction().replace(R.id.container, new ListFragmentActivity()).commit();
+               getSupportFragmentManager().beginTransaction().replace(R.id.container, new ListFragment()).commit();
 
             }
         });
