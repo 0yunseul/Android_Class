@@ -87,7 +87,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         else if(v.getId() ==R.id.btn_order_1){
             //list.get(0).getQty(); //list에 상품을담았고, index 0번에 있는 상품의 현재수량을 가져옴; ->int  qty로 담음
             int qty = list.get(0).getQty();
-
             int price = list.get(0).getPrice();
             int money = m_dto.getMoney()-price;
             if(qty==0) { //현재수량이 0인경우에
@@ -95,8 +94,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             }else if (money<0){
                 Toast.makeText(this,"잔액부족",Toast.LENGTH_SHORT).show();
             }else{
-
-
             }
         }//주문하기 버튼2
         else if (v.getId() ==R.id.btn_order_2){
