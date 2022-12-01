@@ -27,7 +27,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>  {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = inflater.inflate((R.layout.item_fragment_my),parent,false);
+        View v = inflater.inflate(R.layout.item_fragment_my,parent,false);
         ViewHolder viewHolder = new ViewHolder(v);
 
         return viewHolder;
@@ -41,6 +41,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>  {
     @Override
     public int getItemCount() {
         return 5;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return super.getItemViewType(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return super.getItemId(position);
     }
 
     /*ViewHolder 이너클래스 생성*/

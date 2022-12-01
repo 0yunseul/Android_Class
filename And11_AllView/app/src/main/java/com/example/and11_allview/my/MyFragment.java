@@ -3,6 +3,7 @@ package com.example.and11_allview.my;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -25,8 +26,11 @@ public class MyFragment extends Fragment {
         //Recycler 찾아오기
         recv_my = v.findViewById(R.id.recv_my);
         recv_my.setAdapter(new MyAdapter(inflater)); //어댑터 연결
-        
 
+        RecyclerView.LayoutManager manager = new LinearLayoutManager(
+                getContext(), RecyclerView.VERTICAL,false
+                );
+        recv_my.setLayoutManager(manager);
         return v;
     }
 }
