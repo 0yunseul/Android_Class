@@ -15,13 +15,18 @@ import com.example.and11_allview.R;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 /*RecyclerView 상속받기*/
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>  {
     LayoutInflater inflater;
-    //어댑터 연결처리를 위해 생성자를 만들기.
-    public MyAdapter(LayoutInflater inflater) {
+    ArrayList<MyDTO> dto;
 
+    //어댑터 연결처리를 위해 생성자를 만들기.
+
+    public MyAdapter(LayoutInflater inflater, ArrayList<MyDTO> dto) {
         this.inflater = inflater;
+        this.dto = dto;
     }
 
     @NonNull
@@ -35,11 +40,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>  {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+        holder.img.setImageResource(dto.get(position).img);
+        holder.rank.setText(dto.get(position).rank+"");
+        holder.title.setText(dto.get(position).title);
+        holder.artist.setText(dto.get(position).artist);
     }
 
     @Override
     public int getItemCount() {
+
         return 5;
     }
 

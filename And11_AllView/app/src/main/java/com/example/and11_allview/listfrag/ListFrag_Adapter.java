@@ -26,6 +26,7 @@ public class ListFrag_Adapter extends BaseAdapter {
     }
 
     public ArrayList<ListFragDTO> getList() {
+
         return list;
     }
 
