@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linlay_move"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_marginRight="5dp"
+        android:id="@+id/imgv_title"
+        android:src="@drawable/img1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/t_title"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:text="새제품 국산 출장 as 2년 보증 led방 삼성정품칩입니다 많이 사주세요"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_marginRight="8dp"
+            android:textColor="#9EA0A2"
+            android:id="@+id/tv_location"
+            android:text="송하2동"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#9EA0A2"
+                android:id="@+id/tv_time"
+                android:text="끌올 37분전"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_money"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#E38A3C"
+            android:text="22,000원"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
