@@ -73,7 +73,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>  {
 
         public ViewHolder(@NonNull View v) {
             super(v);
-            *//*위젯찾아오기*//*
+            /*위젯찾아오기*/
             img = v.findViewById(R.id.img);
             rank = v.findViewById(R.id.rank);
             title = v.findViewById(R.id.title);

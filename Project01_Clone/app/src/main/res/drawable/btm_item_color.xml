@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--selector : 아이템이 선택 될때/안될때 -->
+
+    <item android:state_checked="true"
+        android:color = "#E91E63"/>
+
+    <item
+        android:color = "#EEDAE1"/>
+
+</selector>
