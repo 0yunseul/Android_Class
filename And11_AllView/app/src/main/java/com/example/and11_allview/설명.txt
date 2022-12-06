@@ -17,3 +17,14 @@ Adapter : 리스트뷰 내부에 반복되는 모양이 각각 용도에 따라�
         ->Adapter 반드시 LayoutInflater가 필요하다. (칸마다 보여줄 레이아웃을 붙이는 처리를 위함)
     1-3. Adapter<->ListView연결 (1차적으로 완료)
     1-4. 똑같은 모양 반복 x -> ArrayList나 데이터 묶음을 이용해서 각각의 칸이 유의미한 데이터를 보여줄 수 있게한다.
+
+
+2.recycler view
+리스트뷰,그리드뷰와 다르게 ViewHolder라는 위젯을 묶어놓은 객체를 강제한다.
+어댑터를 만드는 방법 :
+    2-1.adapter 라는 것을 알아볼 수 있게 adapter 클래스를 만든다.(ex. adapter , adt 글자 쓰기) :RecvAdapter
+    2-2.클래스 안 쪽에 ViewHolder라는 클래스를 만든다.
+    2-3.RecyclerViewAdapter를 상속받는다.
+    2-4.메소드 구현 부분 작성.
+    2-5.RecyclerView 와 Adapter연결
+    2-6.RecyclerView 와 LayoutManager연결 (가로,세로가 가능하기 때문에~~)
