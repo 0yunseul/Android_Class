@@ -1,10 +1,13 @@
 package com.example.project01_clone.friendlist;
 
-public class FriendDTO {
+import java.io.Serializable;
+
+public class FriendDTO implements Serializable {
     private int imgRes;
     private String name, msg;
 
-    public FriendDTO(int imgRes, String name, String msg) {
+
+    public FriendDTO(int imgRes, String name, String msg)  {
         this.imgRes = imgRes;
         this.name = name;
         this.msg = msg;

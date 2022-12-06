@@ -47,7 +47,10 @@ public class MainActivity extends AppCompatActivity {
                     //1. 패키지 추가 ->firendlsit
                     //2.FriendFragment 추가한뒤에
                     //3.클릭시 해당하는 프래그먼트가 붙게 처리한다.
-                         getSupportFragmentManager().beginTransaction().replace(R.id.container, new FriendFragment()).commit();
+                    //     getSupportFragmentManager().beginTransaction().replace(R.id.container, new FriendFragment()).commit();
+                    // -> 아래에 메소드 만들어서 반복처리를 줄일수 있음
+
+
 
                     //▣ 메소드 호출
                     // fragment를  파라미터로 입력받게 만들었다.    → 넘기려면 어떻게 해야할까?
@@ -58,16 +61,19 @@ public class MainActivity extends AppCompatActivity {
 
                 }else if (item.getItemId()== R.id.btm_item2){
                     actionBar.setTitle("채팅");
+                    changeFragment(new ChatFragment());
 
                 }else if (item.getItemId() == R.id.btm_item3){
                     actionBar.setTitle("뷰");
-
+                    changeFragment(new ViewFragment());
                 }else if (item.getItemId() == R.id.btm_item4){
                     actionBar.setTitle("쇼핑");
+                    changeFragment(new ShoppingFragment());
 
 
                 }else if (item.getItemId() == R.id.btm_item5){
                     actionBar.setTitle("더보기");
+                    changeFragment(new MoreFragment());
 
                 }
 
@@ -75,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }//oncreate
-    /*프래그먼트를 changeFragment라는 메소드를 이용해서 동적으로 붙이는 처리를 한다
+    /*4. 프래그먼트를 changeFragment라는 메소드를 이용해서 동적으로 붙이는 처리를 한다
     *,new FriendFragment() 가 바뀌면된다.
     * changeFragment라는 메소드를 친구목록 클릭했을때 호출해보기 -> 위에 ▣  */
     public  void changeFragment(Fragment fragment){

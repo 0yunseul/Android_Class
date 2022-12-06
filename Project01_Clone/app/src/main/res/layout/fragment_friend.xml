@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".friendlist.FriendFragment"
     android:orientation="vertical">
+
+    <!--스크롤뷰는 하나의 자식요소만 가질수 있기 때문에 여러개의 요소가 있다면
+    하나의 요소로 꼭 묶어줄것. 전체 스크롤 처리 Nest쳐서 나오는 scrollview,,-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -12,6 +19,7 @@
         android:scaleType="fitXY"/>
 
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -54,5 +62,5 @@
         android:layout_weight="1"/>
 
 
-
-</LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

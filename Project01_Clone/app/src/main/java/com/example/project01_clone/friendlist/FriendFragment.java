@@ -1,5 +1,6 @@
 package com.example.project01_clone.friendlist;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -21,8 +22,9 @@ import java.util.zip.Inflater;
 
 public class FriendFragment extends Fragment {
     RecyclerView recv_friend_frag;
-
+    Context context;
     ArrayList<FriendDTO> list = new ArrayList<>();
+
 
     int[] imgARR = {
             R.drawable.profile_img1,
@@ -48,12 +50,13 @@ public class FriendFragment extends Fragment {
        // FriendDTO e = new FriendDTO(0,"이름","상메");
         for (int i = 0; i < 30; i++){
         //list.add(new FriendDTO(0,"이름"+(i+1),"상메"+(i+1)));
-        //    list.add(new FriendDTO(imgARR[1],"이름"+(i+1),"상메"+(i+1)));
+        //   → list.add(new FriendDTO(imgARR[1],"이름"+(i+1),"상메"+(i+1)));
+            //마지막 랜덤이미지 처리 ↓
             list.add(new FriendDTO(imgARR[new Random().nextInt(imgARR.length)],"이름"+(i+1),"상메"+(i+1)));
         }
 
         recv_friend_frag = v.findViewById(R.id.recv_friend_frag);
-        recv_friend_frag.setAdapter(new FriendAdapter(inflater,list));
+        recv_friend_frag.setAdapter(new FriendAdapter(inflater,list,getContext()));
         recv_friend_frag.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
 
         return v;
