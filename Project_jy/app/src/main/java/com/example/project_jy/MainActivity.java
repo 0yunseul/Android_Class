@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         else if (v.getId() == R.id.btn_return){
             Intent intent = new Intent(MainActivity.this, ResultActivity.class);
             intent.putExtra("m_dto",  m_dto.getMoney());
-           // intent.putExtra("p_dto","주문한 음료 목록" +)
+            // intent.putExtra("p_dto","주문한 음료 목록" +)
             startActivity(intent);
         }
 
