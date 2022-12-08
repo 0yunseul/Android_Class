@@ -10,9 +10,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.project01_clone.chat.ChatFragment;
+import com.example.project01_clone.external.ExternalFragment;
 import com.example.project01_clone.friendlist.FriendFragment;
 import com.example.project01_clone.more.MoreFragment;
-import com.example.project01_clone.shopping.ShoppingFragment;
 import com.example.project01_clone.view.ViewFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     changeFragment(new ViewFragment());
                 }else if (item.getItemId() == R.id.btm_item4){
                     actionBar.setTitle("쇼핑");
-                    changeFragment(new ShoppingFragment());
+                    changeFragment(new ExternalFragment());
 
 
                 }else if (item.getItemId() == R.id.btm_item5){

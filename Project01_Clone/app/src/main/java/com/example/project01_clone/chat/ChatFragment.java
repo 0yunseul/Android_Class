@@ -41,7 +41,8 @@ public class ChatFragment extends Fragment {
 
         /*채팅아이콘눌렀을때 채팅화면 뜨게하는것*/
         View v =  inflater.inflate(R.layout.fragment_chat, container, false);
-    //이미지는 배열을 이용해서 랜덤하게,
+
+     //이미지는 배열을 이용해서 랜덤하게,
         ArrayList<ChatDTO> list = new ArrayList<>();
         for (int i = 0; i < 22; i++) {
             list.add(new ChatDTO(imgARR[new Random().nextInt(imgARR.length)], "보낸사람", "보낸내용", "오전" + (i+1) + ":"+(i+10)));

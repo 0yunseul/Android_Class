@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo_29cm" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/com"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="29CM"
+                        android:textSize="18dp" />
+                    <ImageView
+                        android:id="@+id/check"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@+id/com"
+                        android:src="@drawable/ic_check" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="2022.10.25" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="214dp"
+                android:src="@drawable/list_ver" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="브라운 야드와 도시를 떠나요"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도시를 떠나 도착한 외딴 섬, 탐험하듯 보낸 신비로운 오후의 한때, 29CM에서만 만날 수 있는 '네이비 컬렉션'과 '뉴 노마드'주제로 완성된 브라운 야드 22FW를 만..."
+            android:textSize="15dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"/>
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:src="@drawable/welcome_29"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BROWNYARD X 29CM PT"/>
+        <LinearLayout
+           android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/globe"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 웹사이트"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+       <LinearLayout
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <LinearLayout
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_weight="1">
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/ic_share"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_share"/>
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공유하기"/>
+           </LinearLayout>
+           <LinearLayout
+               android:gravity="center"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+           <ImageView
+               android:layout_margin="5dp"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@drawable/ic_heart"/>
+           <TextView
+               android:layout_margin="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="좋아요"/>
+           <TextView
+               android:layout_margin="5dp"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="84"/>
+           </LinearLayout>
+       </LinearLayout>
+    </LinearLayout>
+
+
+   </LinearLayout>
+</androidx.core.widget.NestedScrollView>

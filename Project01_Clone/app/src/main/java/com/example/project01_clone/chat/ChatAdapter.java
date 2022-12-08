@@ -65,7 +65,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         public void onClick(View v) {
             //화면 전환 -> 채팅 액티비티
             //화면 전환 : intent
-            
+
             Intent intent = new Intent(context,ChatActivity.class);  //context는 필드에서 선언 필요, 생성자 또는 getter setter만들기
                                     //context는 두가지 있고, 지금 사용하는 건 activity context  지금위치에서 , 다른 액티비티 띄울것이다.
 
