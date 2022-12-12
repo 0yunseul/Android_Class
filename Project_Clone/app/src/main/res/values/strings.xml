@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Project_Clone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="activity_content">페이스 같은 건 잊고 그냥 달려보세요. NRC와 함께
+러닝을 완료한 후에는 여기에서 러닝 거리, 통계, 달성
+기록을 확인할 수 있습니다. </string>
+    <string name="plan_explain">NRC training plans give you weekly
+coaching and guidance to help you
+reach your goals.</string>
+    <string name="plan_ex_video">You\'ll get the guidance, motivation and
+inspiration to run better, faster, further,
+recover better and have more fun. The goal is
+to not only get you stronger and faster,
+but also smarter. We believe that becoming a
+better athlete involves becoming a better
+coach.</string>
+
 </resources>

@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4def52c9-bbef-4e0c-af87-9e242efc10ef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Android_Class.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Android_Class.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_Clone/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_Clone/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_Clone/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_Clone/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project01_Clone/app/src/main/AndroidManifest.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project_Clone" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />

@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.and11_allview.R;
+
 import java.util.ArrayList;
 
 
@@ -49,13 +51,13 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         public ViewHolder(@NonNull View v) {
             super(v);
 
-            imgv_title =v.findViewById()
-            tv_title = v.findViewById();
-            tV_location =
-            tv_money =
-            tv_comments_cnt =
-            tv_heart_cnt =
-            btn_carrot_recycler =
+            imgv_title =v.findViewById(R.id.imgv_title);
+          //  tv_title = v.findViewById(R.id.tv_title);
+           // tV_location =
+            //tv_money =
+            //tv_comments_cnt =
+            //tv_heart_cnt =
+            //btn_carrot_recycler =
         }
     }
 

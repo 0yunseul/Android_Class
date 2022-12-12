@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--각각의 프래그먼트와 연겷하는 item 추가-->
+    <item
+        android:title="홈"
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="withText"
+        >
+    </item>
+    <item
+        android:title="플랜"
+        android:id="@+id/plan"
+        android:enabled="true"
+        android:icon="@drawable/ic_plan"
+        app:showAsAction="withText"
+        >
+    </item>
+    <item
+        android:title="러닝"
+        android:id="@+id/running"
+        android:enabled="true"
+        android:icon="@drawable/ic_run"
+        app:showAsAction="withText"
+        >
+    </item>
+    <item
+        android:title="클럽"
+        android:id="@+id/club"
+        android:enabled="true"
+        android:icon="@drawable/ic_club"
+        app:showAsAction="withText"
+        >
+    </item>
+    <item
+        android:title="활동"
+        android:id="@+id/activity"
+        android:enabled="true"
+        android:icon="@drawable/ic_activity"
+        app:showAsAction="withText"
+       >
+    </item>
+
+</menu>

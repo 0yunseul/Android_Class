@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".running.RunningFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            style="@style/user"
+            android:src="@drawable/user"/>
+        <TextView
+            style="@style/below_title"
+            android:text="러닝"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            style="@style/top_right"
+            android:src="@drawable/ic_save"/>
+    </RelativeLayout>
+       <TextView
+           android:text="러닝"
+           style="@style/title"/>
+
+        <!--바로 시작 / 러닝 가이드 -->
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:tabTextColor="@color/gray"
+                app:tabSelectedTextColor="@color/black"
+                android:id="@+id/tab_running">
+
+            </com.google.android.material.tabs.TabLayout>
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/run_frame"/>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

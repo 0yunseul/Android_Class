@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ActivityFragment">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="#FBFBFB">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            style="@style/user"
+            android:src="@drawable/user"/>
+        <ImageView
+            style="@style/top_right"
+            android:src="@drawable/ic_plus"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        style="@style/title"
+        android:text="활동"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B8B8B8"/>
+        <ImageView
+            android:id="@+id/gif_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/activity_main" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/a_tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gif_img"
+            android:text="모든 러닝을 기념하세요"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/a_tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_tv_1"
+            android:layout_marginTop="15dp"
+            android:text="@string/activity_content"/>
+
+        <TextView
+            android:id="@+id/a_tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_tv_2"
+            android:layout_marginTop="15dp"
+            android:text="함께 달려 봐요!"/>
+        <Button
+            android:layout_below="@id/a_tv_3"
+            android:layout_centerInParent="true"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:text="러닝 시작하기"/>
+    </RelativeLayout>
+
+   </LinearLayout>
+</androidx.core.widget.NestedScrollView>
