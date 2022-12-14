@@ -8,21 +8,15 @@
     android:orientation="vertical"
     android:layout_margin="10dp"
     >
-
-
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:id="@+id/container"/>
-
-
-
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/gray"/>
+        android:background="#CCCCCC"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"

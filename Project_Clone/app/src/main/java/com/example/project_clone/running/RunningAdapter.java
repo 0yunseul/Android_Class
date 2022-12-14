@@ -1,43 +1,36 @@
 package com.example.project_clone.running;
 
-import android.content.Context;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import java.util.ArrayList;
+import java.util.List;
 
-public class RunningAdapter extends RecyclerView.Adapter<RunningAdapter.ViewHolder> {
+public class RunningAdapter extends FragmentPagerAdapter {
     LayoutInflater inflater;
-    Context context;
+    private List<Fragment> fragmentList = new ArrayList<>();
 
-    public RunningAdapter(LayoutInflater inflater, Context context) {
-        this.inflater = inflater;
-        this.context = context;
+    public RunningAdapter(@NonNull FragmentManager fm, int behavior) {
+        super(fm,behavior);
+    }
+    public void addFragment(Fragment fragment){
+        fragmentList.add(fragment);
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+    public Fragment getItem(int position) {
+        return fragmentList.get(position);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+    public int getCount() {
+        return fragmentList.size();
     }
-
-    @Override
-    public int getItemCount() {
-        return 0;
-    }
-
-    public class ViewHolder extends RecyclerView.ViewHolder{
-
-    public ViewHolder(@NonNull View itemView) {
-        super(itemView);
-    }
-}
-
 }

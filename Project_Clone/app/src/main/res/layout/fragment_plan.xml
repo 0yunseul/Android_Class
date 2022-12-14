@@ -4,19 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".plan.PlanFragment"
-    android:background="@color/bg">
+    android:background="#CCCCCC">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
+    <LinearLayout
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <ImageView
             style="@style/user"
             android:src="@drawable/user"/>
         <TextView
             style="@style/title"
             android:text="플랜"/>
-
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"/>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recv_plan"
             android:layout_width="match_parent"
@@ -25,6 +33,7 @@
 
 
         <LinearLayout
+            android:background="#fff"
             android:layout_margin="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

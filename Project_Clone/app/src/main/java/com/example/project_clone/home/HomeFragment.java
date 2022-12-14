@@ -1,36 +1,49 @@
 package com.example.project_clone.home;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.project_clone.R;
-import com.example.project_clone.running.RunningActivity;
-import com.example.project_clone.running.RunningFragment;
+
+import java.util.ArrayList;
+
 
 public class HomeFragment extends Fragment {
-    Button start_running;
+    ViewPager2 sliderViewPager;
+    LinearLayout layoutIndicator;
+    int[] imgArr = {
+            R.drawable.home_01,
+            R.drawable.home_02,
+            R.drawable.home_03,
+            R.drawable.home_04,
+            R.drawable.home_05,
+    };
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_home, container, false);
+        ArrayList<HomeDTO> list = new ArrayList<>();
+        for (int i = 0; i <6; i++){
+            list.add(new HomeDTO(i));
+        }
 
-        start_running = v.findViewById(R.id.start_running);
-        start_running.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
-
-        return  v;
+        return v;
     }
+
 }

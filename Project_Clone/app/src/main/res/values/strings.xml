@@ -1,19 +1,19 @@
 <resources>
     <string name="app_name">Project_Clone</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">더 많은 걸 찾으시나요? \n러닝 시작! </string>
+    <string name="activity_content">페이스 같은 건 잊고 그냥 달려보세요. NRC와 함께\n러닝을 완료한 후에는 여기에서 러닝 거리, 통계, 달성\n기록을 확인할 수 있습니다. </string>
+    <string name="plan_explain">NRC training plans give you weekly\n coaching and guidance to help you\n reach your goals.</string>
+    <string name="plan_ex_video">You will get the guidance, motivation and\n inspiration to run better, faster, further,\n recover better and have more fun. The goal is\n
+to not only get you stronger and faster,\n but also smarter. We believe that becoming a\n better athlete involves becoming a better\n coach.</string>
+    <string name="plan_1">Guidance on running, recovery, strength\n training and mindset to prepare you for the\n journey of a lifetime. </string>
+
+    <string name="plan_overview">This training plan is built to help the best\n version of you reach the starting line of your\n Marathon. The programme is a maximum of\n 18 weeks long. We recommend that you begin\n this programme with no less than 12 weeks to\n go before your race date.</string>
+    <string name="level">This plan is built for all runners. We offer up to\n 5 runs each week. We recommend that you\n do at least 3 runs per week and have worked\n up to a consistent running routine prior to\n starting. For every easy and Long Run, you\n can go shorter or longer based on your\n fitness. Check in with your body and make\n adjustments as needed. Remember, you are\n becoming your own best coach as you\n progress through this plan.</string>
+    <string name="plan_week">This week you will begin your journey with a\n series of runs and light workouts that\n introduce you to the training plan.</string>
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="activity_content">페이스 같은 건 잊고 그냥 달려보세요. NRC와 함께
-러닝을 완료한 후에는 여기에서 러닝 거리, 통계, 달성
-기록을 확인할 수 있습니다. </string>
-    <string name="plan_explain">NRC training plans give you weekly
-coaching and guidance to help you
-reach your goals.</string>
-    <string name="plan_ex_video">You\'ll get the guidance, motivation and
-inspiration to run better, faster, further,
-recover better and have more fun. The goal is
-to not only get you stronger and faster,
-but also smarter. We believe that becoming a
-better athlete involves becoming a better
-coach.</string>
+    <string name="mind_running_txt">Connect your mind and\n body with mindfulness runs.\n Audio in English.</string>
+
 
 </resources>

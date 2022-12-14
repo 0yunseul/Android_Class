@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toolbar;
+import android.widget.VideoView;
 
 import com.bumptech.glide.Glide;
 import com.example.project_clone.activity.ActivityFragment;
@@ -24,9 +26,8 @@ import com.google.android.material.tabs.TabLayout;
 public class MainActivity extends AppCompatActivity {
     ActionBar actionBar;
     BottomNavigationView btm_nav;
-    Fragment fragment_run1, fragment_run2;
-
-
+    Toolbar toolbar;
+    Fragment board, challange;
 
 
     @Override
@@ -35,10 +36,8 @@ public class MainActivity extends AppCompatActivity {
        setContentView(R.layout.activity_main);
 
 
-
-
        actionBar = getSupportActionBar();
-       changeFragment(new RunningFragment());
+       changeFragment(new HomeFragment());
 
         btm_nav = findViewById(R.id.btm_nav);
         btm_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -53,9 +52,14 @@ public class MainActivity extends AppCompatActivity {
                 } else if (item.getItemId() == R.id.running) {
                     actionBar.setTitle("러닝");
                     changeFragment(new RunningFragment());
+
+
                 } else if (item.getItemId() == R.id.club) {
                     actionBar.setTitle("클럽");
                     changeFragment(new ClubFragment());
+
+
+
                 } else if (item.getItemId() == R.id.activity) {
                     actionBar.setTitle("활동");
                     changeFragment(new ActivityFragment());
@@ -67,9 +71,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
-
 
     private void changeFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
