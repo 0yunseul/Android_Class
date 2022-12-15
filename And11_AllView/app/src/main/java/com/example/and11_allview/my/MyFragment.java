@@ -35,6 +35,7 @@ public class MyFragment extends Fragment {
             dto.add(new MyDTO("Nxde","(여자)아이들",R.drawable.img4,i));
             dto.add(new MyDTO("After Like","아이브",R.drawable.img5,i));
 
+
         }
 
        MyAdapter adapter = new MyAdapter(getLayoutInflater(),dto);

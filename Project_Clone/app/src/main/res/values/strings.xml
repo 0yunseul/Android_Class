@@ -6,7 +6,20 @@
     <string name="plan_explain">NRC training plans give you weekly\n coaching and guidance to help you\n reach your goals.</string>
     <string name="plan_ex_video">You will get the guidance, motivation and\n inspiration to run better, faster, further,\n recover better and have more fun. The goal is\n
 to not only get you stronger and faster,\n but also smarter. We believe that becoming a\n better athlete involves becoming a better\n coach.</string>
-    <string name="plan_1">Guidance on running, recovery, strength\n training and mindset to prepare you for the\n journey of a lifetime. </string>
+    <string name="plan_txt_2">Audio-Guided Runs\n &amp; Music</string>
+    <string name="plan_p1_tv1">18-Week Training Plan</string>
+    <string name="plan_p1_tv2">Guidance on running, recovery, strength\n training and mindset to prepare you for the\n journey of a lifetime. </string>
+    <string name="plan_p2_tv1">4-Week Training Plan</string>
+    <string name="plan_p2_tv2">Everything you need to get started and\n keep going</string>
+    <string name="plan_p3_tv1">8-Week Training Plan</string>
+    <string name="plan_p3_tv2">A fun, exciting combination of speed,\n endurance, recovery and motivation to get you\n ready to tackle a 5K.</string>
+    <string name="plan_p4_tv1">14-Week Training Plan</string>
+    <string name="plan_p4_tv2">Combines Speed Runs, Long Runs, Recovery\n Runs and Rest Days to help get you ready to\n run your best Half-Marathon.</string>
+
+    <string name="plan_btn_1"> 모든 레벨</string>
+    <string name="plan_btn_2"> 초급</string>
+    <string name="plan_btn_3"> 초급</string>
+    <string name="plan_btn_4"> 모든 레벨</string>
 
     <string name="plan_overview">This training plan is built to help the best\n version of you reach the starting line of your\n Marathon. The programme is a maximum of\n 18 weeks long. We recommend that you begin\n this programme with no less than 12 weeks to\n go before your race date.</string>
     <string name="level">This plan is built for all runners. We offer up to\n 5 runs each week. We recommend that you\n do at least 3 runs per week and have worked\n up to a consistent running routine prior to\n starting. For every easy and Long Run, you\n can go shorter or longer based on your\n fitness. Check in with your body and make\n adjustments as needed. Remember, you are\n becoming your own best coach as you\n progress through this plan.</string>
@@ -15,5 +28,14 @@ to not only get you stronger and faster,\n but also smarter. We believe that bec
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="mind_running_txt">Connect your mind and\n body with mindfulness runs.\n Audio in English.</string>
 
-
+    <string name="ch_w">12월 주간 챌린지</string>
+    <string name="ch_tv2_15">이번주 15km를 달려보세요</string>
+    <string name="ch_tv2_5">이번 주 5km를 달려보세요</string>
+    <string name="ch_tv2_10">이번 주에 10km를 달려보세요</string>
+    <string name="ch_m_100">12월 100k 챌린지</string>
+    <string name="ch_m_25">12월 25k 챌린지</string>
+    <string name="ch_m_30">12월 30k 챌린지</string>
+    <string name="ch_tv2_100">이번 달에 100km를 달려보세요</string>
+    <string name="ch_tv2_25">이번 달 25km를 달려보세요</string>
+    <string name="ch_tv2_30">이번 달에 30km를 달려보세요</string>
 </resources>

@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,20 +13,12 @@
         android:theme="@style/Theme.Project_Clone"
         tools:targetApi="31">
         <activity
-            android:name=".home.User_profileActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-
-        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        <!--앱 실행되었을때  splash activity 나타나게-->
+            <!-- 앱 실행되었을때  splash activity 나타나게 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

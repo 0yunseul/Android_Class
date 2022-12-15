@@ -8,8 +8,9 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:orientation="vertical"
-       android:background="#FBFBFB">
+      >
     <RelativeLayout
+        android:background="@color/bg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
@@ -20,6 +21,7 @@
             android:src="@drawable/ic_plus"/>
     </RelativeLayout>
     <LinearLayout
+        android:background="@color/bg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <TextView

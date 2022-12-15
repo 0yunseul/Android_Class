@@ -7,20 +7,14 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toolbar;
-import android.widget.VideoView;
 
-import com.bumptech.glide.Glide;
 import com.example.project_clone.activity.ActivityFragment;
 import com.example.project_clone.club.ClubFragment;
 import com.example.project_clone.home.HomeFragment;
 import com.example.project_clone.plan.PlanFragment;
 import com.example.project_clone.running.RunningFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.tabs.TabLayout;
 
 
 public class MainActivity extends AppCompatActivity {

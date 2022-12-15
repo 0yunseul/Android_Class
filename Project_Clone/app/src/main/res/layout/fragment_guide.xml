@@ -11,6 +11,7 @@
         android:orientation="vertical">
     <!--First 가로 스크롤뷰-->
     <HorizontalScrollView
+        android:scrollbarThumbHorizontal="@null"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
         <!--스크롤뷰를 감싸는 리니어레이아웃-->
@@ -100,6 +101,7 @@
 
     <!--Second 가로 스크롤뷰-->
     <HorizontalScrollView
+        android:scrollbarThumbHorizontal="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -191,6 +193,7 @@
     </RelativeLayout>
     <!--컬렉션 시작하기 : 세번째 가로 스크롤뷰-->
     <HorizontalScrollView
+        android:scrollbarThumbHorizontal="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout

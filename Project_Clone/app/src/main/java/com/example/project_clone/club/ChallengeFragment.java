@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.project_clone.R;
@@ -14,30 +15,28 @@ import com.example.project_clone.R;
 import java.util.ArrayList;
 
 public class ChallengeFragment extends ClubFragment {
-    RecyclerView recv_ch;
-    Context context;
-    ArrayList<ChallengeDTO> list = new ArrayList<>();
-    TextView tv_ch_1, tv_ch_2,tv_ch_3;
 
-    int[]imgARR = {
-            R.drawable.small_15k,
-            R.drawable.small_5k,
-            R.drawable.small_10k,
-            R.drawable.small_100k,
-            R.drawable.small_25k,
-            R.drawable.small_30k
-    };
+    RecyclerView recv;
+    ArrayList<ChallengeDTO> list = new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_challange, container, false);
-        for (int i = 0; i < 5; i++) {
-            list.add(new ChallengeDTO(i,"주간챌린지","달려보세요","4일남음"));
 
-        }
-        recv_ch = v.findViewById(R.id.recv_ch);
+        recv = v.findViewById(R.id.recv_ch);
+        list.add(new ChallengeDTO(R.drawable.small_15k,R.string.ch_w,R.string.ch_tv2_15,"3일 남음",R.drawable.ic_arrow_right));
+        list.add(new ChallengeDTO(R.drawable.small_5k,R.string.ch_w,R.string.ch_tv2_5,"3일 남음",R.drawable.ic_arrow_right));
+        list.add(new ChallengeDTO(R.drawable.small_10k,R.string.ch_w,R.string.ch_tv2_10,"3일 남음",R.drawable.ic_arrow_right));
+        list.add(new ChallengeDTO(R.drawable.small_100k,R.string.ch_m_100,R.string.ch_tv2_100,"16일 남음",R.drawable.ic_arrow_right));
+        list.add(new ChallengeDTO(R.drawable.small_25k,R.string.ch_m_25,R.string.ch_tv2_25,"16일 남음",R.drawable.ic_arrow_right));
+        list.add(new ChallengeDTO(R.drawable.small_30k,R.string.ch_m_30,R.string.ch_tv2_30,"16일 남음",R.drawable.ic_arrow_right));
 
-       recv_ch.setAdapter(new ChallengeAdapter(inflater,list,getContext()));
+
+        ChallengeAdapter adapter = new ChallengeAdapter(getLayoutInflater(),list);
+        recv.setAdapter(adapter);
+
+        RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false);
+        recv.setLayoutManager(manager);
         return v;
     }
 }

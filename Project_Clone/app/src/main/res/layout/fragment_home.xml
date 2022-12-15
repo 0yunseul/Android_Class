@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".home.HomeFragment"
-    android:background="#CCCCCC">
+    android:background="@color/bg">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,8 +34,7 @@
             android:layout_margin="15dp">
             <TextView
                 android:id="@+id/h_tv1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/h_tv1"
                 android:text="새로운 소식"/>
             <TextView
                 android:layout_width="wrap_content"
