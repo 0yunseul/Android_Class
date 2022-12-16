@@ -65,4 +65,19 @@
         <item name="android:textSize">15dp</item>
     </style>
 
+    <!--러닝 가이드 리사이클러뷰 아이템_리니어-->
+<!-- -->
+    <!--러닝 가이드 리사이클러뷰 아이템_이미지뷰-->
+    <style name="rg_item_img">
+     <item name="android:scaleType">fitXY</item>
+    <item name="android:layout_width">150dp</item>
+    <item name="android:layout_height">150dp</item>
+    </style>
+
+    <!--러닝 가이드 리사이클러뷰 아이템_텍스트뷰-->
+    <style name="rg_item_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+       <item name="android:layout_marginTop">15dp</item>
+    </style>
 </resources>

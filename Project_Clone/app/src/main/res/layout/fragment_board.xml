@@ -18,7 +18,8 @@
         android:layout_centerVertical="true"
         android:layout_marginTop="-100dp"
         android:backgroundTint="#fff"
+        android:textColor="#000"
         android:text="친구 찾기 및 초대"
-        android:textColor="#000" />
+        />
 
 </RelativeLayout>

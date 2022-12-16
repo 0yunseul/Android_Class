@@ -40,9 +40,11 @@ public class MainActivity extends AppCompatActivity {
                 if (item.getItemId() == R.id.home) {
                     actionBar.setTitle("홈");
                     changeFragment(new HomeFragment());
+
                 } else if (item.getItemId() == R.id.plan) {
                     actionBar.setTitle("플랜");
                     changeFragment(new PlanFragment());
+
                 } else if (item.getItemId() == R.id.running) {
                     actionBar.setTitle("러닝");
                     changeFragment(new RunningFragment());

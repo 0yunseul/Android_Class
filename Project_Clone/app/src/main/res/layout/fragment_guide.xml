@@ -191,98 +191,13 @@
             style="@style/below_title"
             android:textSize="25dp"/>
     </RelativeLayout>
-    <!--컬렉션 시작하기 : 세번째 가로 스크롤뷰-->
-    <HorizontalScrollView
-        android:scrollbarThumbHorizontal="@null"
+    <!--컬렉션 시작하기 리사이클러뷰-->
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <!--첫번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_g3"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="25분 운동 · 스피드 런"/>
-            </LinearLayout>
-            <!--두번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_g4"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="24분 운동 · 회복 러닝"/>
-            </LinearLayout>
-            <!--세번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_g5"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="23분 운동 · 회복 러닝"/>
-            </LinearLayout>
-            <!--네번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_g6"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="35분 운동 · 장거리 러닝"/>
-            </LinearLayout>
-            <!--다섯번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_g7"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="24 Min· Treadmill Run"/>
-            </LinearLayout>
-        </LinearLayout>
-    </HorizontalScrollView>
-    <!--단거리러닝-->
+        android:layout_height="wrap_content"
+        android:id="@+id/recv_collection"/>
+
+    <!--단거리러닝타이틀-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -300,11 +215,70 @@
             style="@style/below_title"
             android:textSize="25dp"/>
     </RelativeLayout>
-    <!--단거리러닝 리사이클러뷰-->
-    <androidx.recyclerview.widget.RecyclerView
+    <!--단거리러닝 가로 스크롤뷰-->
+    <HorizontalScrollView
+        android:scrollbarThumbHorizontal="@null"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/recv_short_d"/>
+        android:orientation="horizontal">
+        <!--첫번째 항목-->
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_short_1"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25분 운동 · 스피드 런"/>
+        </LinearLayout>
+        <!--두번째 항목-->
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_short_2"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25분 운동 · 스피드 런"/>
+        </LinearLayout>
+        <!--세번째 항목-->
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_short_3"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25분 운동 · 스피드 런"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
     <!--장거리 러닝-->
     <RelativeLayout
         android:layout_width="match_parent"
@@ -323,11 +297,52 @@
             style="@style/below_title"
             android:textSize="25dp"/>
     </RelativeLayout>
-    <!--장거리러닝 리사이클러뷰-->
-    <androidx.recyclerview.widget.RecyclerView
+    <!--장거리러닝 가로 스크롤뷰-->
+    <HorizontalScrollView
+        android:scrollbarThumbHorizontal="@null"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/recv_long_d"/>
+        android:orientation="horizontal">
+        <!--첫번째 항목-->
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_long_1"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25분 운동 · 스피드 런"/>
+        </LinearLayout>
+        <!--두번째 항목-->
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_long_2"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25분 운동 · 스피드 런"/>
+        </LinearLayout>
+    </LinearLayout>
+    </HorizontalScrollView>
+
     <!--스피드러닝 -->
      <RelativeLayout
         android:layout_width="match_parent"
@@ -365,6 +380,7 @@
             android:layout_alignParentRight="true"
             android:text="전체"/>
         <TextView
+
             android:layout_below="@+id/m"
             android:text="@string/mind_running_txt"
             style="@style/below_title"
@@ -376,127 +392,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/recv_mind"/>
 
-    <!--Treadmill Runs : 마지막 가로 스크롤뷰-->
-    <HorizontalScrollView
+    <!--Treadmill Runs : 리사이클러뷰-->
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <!--첫번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_t_1"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="60 Min · Run"/>
-            </LinearLayout>
-            <!--두번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_t_2"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="10 Min · Run"/>
-            </LinearLayout>
-            <!--세번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_t_3"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="20 Min · Treadmill Run"/>
-            </LinearLayout>
-            <!--네번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_t_4"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="15 Min · Treadmill Run"/>
-            </LinearLayout>
-            <!--다섯번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_t_5"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="30 Min· Treadmill Run"/>
-            </LinearLayout>
-            <!--여섯번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_t_6"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="29 Min· Treadmill Run"/>
-            </LinearLayout>
-            <!--일곱번째 항목-->
-            <LinearLayout
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:scaleType="fitXY"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/run_t_7"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="25 Min· Treadmill Run"/>
-            </LinearLayout>
-        </LinearLayout>
-    </HorizontalScrollView>
+        android:layout_height="wrap_content"
+        android:id="@+id/recv_tread"/>
+
+
+
+
 </LinearLayout>
 </androidx.core.widget.NestedScrollView>
