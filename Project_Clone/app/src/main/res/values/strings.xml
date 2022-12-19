@@ -38,4 +38,10 @@ to not only get you stronger and faster,\n but also smarter. We believe that bec
     <string name="ch_tv2_100">이번 달에 100km를 달려보세요</string>
     <string name="ch_tv2_25">이번 달 25km를 달려보세요</string>
     <string name="ch_tv2_30">이번 달에 30km를 달려보세요</string>
+
+    <string name="empty"> agr_empty_runs_saved_title</string>
+    <string name="empty_sub"> agr_empty_runs_saved_subtitle</string>
+
+    <string name="a">개요</string>
+    <string name="b">러닝구성</string>
 </resources>

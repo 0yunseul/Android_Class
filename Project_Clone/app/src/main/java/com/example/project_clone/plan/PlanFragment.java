@@ -18,6 +18,7 @@ import java.util.ArrayList;
 public class PlanFragment extends Fragment {
     RecyclerView recv_p;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -36,6 +37,8 @@ public class PlanFragment extends Fragment {
 
         RecyclerView.LayoutManager m = new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false);
         recv_p.setLayoutManager(m);
+
+
         return v;
     }
 }
