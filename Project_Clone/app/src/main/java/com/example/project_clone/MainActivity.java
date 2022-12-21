@@ -5,7 +5,12 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.Bundle;
+import android.util.Base64;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -17,6 +22,9 @@ import com.example.project_clone.home.HomeFragment;
 import com.example.project_clone.plan.PlanFragment;
 import com.example.project_clone.running.RunningFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -76,5 +84,43 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(container,fragment).commit();
     }
 
+/*    private void getHashKey(){
+
+        PackageInfo packageInfo = null;
+
+        try {
+
+            packageInfo = getPackageManager().getPackageInfo(getPackageName(), PackageManager.GET_SIGNATURES);
+
+        } catch (PackageManager.NameNotFoundException e) {
+
+            e.printStackTrace();
+
+        }
+
+        if (packageInfo == null)
+
+            Log.e("KeyHash", "KeyHash:null");
+
+
+        for (Signature signature : packageInfo.signatures) {
+
+            try {
+
+                MessageDigest md = MessageDigest.getInstance("SHA");
+
+                md.update(signature.toByteArray());
+
+                Log.d("로그", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+
+            } catch (NoSuchAlgorithmException e) {
+
+                Log.e("로그", "Unable to get MessageDigest. signature=" + signature, e);
+
+            }
+
+        }
+
+    }*/
 
 }

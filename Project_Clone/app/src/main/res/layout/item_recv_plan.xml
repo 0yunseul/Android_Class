@@ -5,7 +5,7 @@
     android:layout_margin="15dp"
     android:background="#fff"
     android:orientation="vertical"
-    android:id="@+id/ln1">
+    android:id="@+id/ln_plan">
         <ImageView
             android:scaleType="fitXY"
             android:id="@+id/plan_img"

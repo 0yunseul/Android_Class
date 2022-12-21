@@ -16,7 +16,7 @@ import com.example.project_clone.plan.PlanAdapter;
 import java.util.ArrayList;
 
 public class GuideFragment extends Fragment {
-    RecyclerView recv_collection, recv_speed, recv_mind, recv_tread;
+    RecyclerView recv_collection,  recv_mind, recv_tread;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

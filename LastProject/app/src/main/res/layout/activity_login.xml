@@ -37,5 +37,13 @@
         android:layout_height="wrap_content"
         android:text="로그인"/>
 
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgv_kakao_login"
+        android:src="@drawable/kakao_login"/>
+    <com.navercorp.nid.oauth.view.NidOAuthLoginButton
+        android:id="@+id/buttonOAuthLoginImg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
 </LinearLayout>

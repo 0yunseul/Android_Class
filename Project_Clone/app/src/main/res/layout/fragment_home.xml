@@ -37,6 +37,7 @@
                 style="@style/h_tv1"
                 android:text="새로운 소식"/>
             <TextView
+                android:id="@+id/all"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="모두 보기"

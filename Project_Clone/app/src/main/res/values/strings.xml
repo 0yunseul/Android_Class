@@ -24,24 +24,39 @@ to not only get you stronger and faster,\n but also smarter. We believe that bec
     <string name="plan_overview">This training plan is built to help the best\n version of you reach the starting line of your\n Marathon. The programme is a maximum of\n 18 weeks long. We recommend that you begin\n this programme with no less than 12 weeks to\n go before your race date.</string>
     <string name="level">This plan is built for all runners. We offer up to\n 5 runs each week. We recommend that you\n do at least 3 runs per week and have worked\n up to a consistent running routine prior to\n starting. For every easy and Long Run, you\n can go shorter or longer based on your\n fitness. Check in with your body and make\n adjustments as needed. Remember, you are\n becoming your own best coach as you\n progress through this plan.</string>
     <string name="plan_week">This week you will begin your journey with a\n series of runs and light workouts that\n introduce you to the training plan.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="mind_running_txt">Connect your mind and\n body with mindfulness runs.\n Audio in English.</string>
+
+    <string name="pass">간편하게 체크인하고 모든 나이키 매장과 이벤트를 통해 맞춤형 서비스를 받아보세요</string>
+
 
     <string name="ch_w">12월 주간 챌린지</string>
     <string name="ch_tv2_15">이번주 15km를 달려보세요</string>
     <string name="ch_tv2_5">이번 주 5km를 달려보세요</string>
     <string name="ch_tv2_10">이번 주에 10km를 달려보세요</string>
+
     <string name="ch_m_100">12월 100k 챌린지</string>
     <string name="ch_m_25">12월 25k 챌린지</string>
     <string name="ch_m_30">12월 30k 챌린지</string>
+
     <string name="ch_tv2_100">이번 달에 100km를 달려보세요</string>
     <string name="ch_tv2_25">이번 달 25km를 달려보세요</string>
     <string name="ch_tv2_30">이번 달에 30km를 달려보세요</string>
 
+    <string name="ch_30k">30K 챌린지에 참여할 시간입니다! 이번 달에\n 30km를 달리고 완주자 기록을 달성하세요.</string>
+    <string name="ch_25k">25K 챌린지에 참여할 시간입니다! 이번 달에\n 25km를 달리고 완주자 기록을 달성하세요.</string>
+    <string name="ch_100k">100K 챌린지에 참여할 시간입니다! 이번 달에\n 100km를 달리고 완주자 기록을 달성하세요.</string>
+    <string name="ch_10k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번\n 주에 10km를 달리면 특별한 완주자 기록을 달성할 수\n 있습니다.</string>
+    <string name="ch_5k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번\n 주에 5km를 달리면 특별한 완주자 기록을 달성할 수\n 있습니다.</string>
+    <string name="ch_15k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번\n 주에 15km를 달리면 특별한 완주자 기록을 달성할 수\n 있습니다.</string>
+
+
     <string name="empty"> agr_empty_runs_saved_title</string>
     <string name="empty_sub"> agr_empty_runs_saved_subtitle</string>
 
+    <string name="coach1">Each week, your Coach will introduce the focus areas and workouts ahead. You wll also have the option to hear from them on every Guided Run.</string>
+    <string name="coach1_ex">Chris Bennett is the Nike Running Global Head Coach. Coach Bennett is an NRC pioneer that helped build the Nike Run Club from the ground up.</string>
+
     <string name="a">개요</string>
     <string name="b">러닝구성</string>
+
+    <string name="diconn">죄송합니다. 이 컨텐츠를 로드할 수 없습니다. </string>
 </resources>

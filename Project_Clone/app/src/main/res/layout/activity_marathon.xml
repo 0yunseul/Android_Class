@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".plan.MarathonActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <VideoView
+            android:id="@+id/vv"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:visibility="visible">
+        </VideoView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:layout_margin="15dp"
+            android:id="@+id/back"
+            android:src="@drawable/ic_arrow_left_white"/>
+            <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_share_white" />
+        <TextView
+          android:layout_marginTop="200dp"
+          android:layout_marginLeft="15dp"
+          android:textSize="30dp"
+          android:id="@+id/tv1"
+          android:layout_below="@+id/back"
+          style="@style/title"
+          android:textColor="#fff"
+          android:text="Marathon"/>
+
+            <Button
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="#fff"
+                android:text="▶ 트레일러 보기"
+                android:textColor="#000" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/d1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_plan_d"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18 Weeks"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/d1"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/d2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_plan_d2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up to 5 runs a week"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/d2"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/d3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_plan_d3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance-and duration-based runs"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/d3"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/d4"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_plan_d4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/d4"
+                android:text="Best for: All Levels" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/h2"
+                android:text="Plan Overview"/>
+            <TextView
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/plan_txt"
+                android:text="@string/plan_overview"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/h2"
+                android:text="Experience Level"/>
+            <TextView
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/plan_txt"
+                android:text="@string/level"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/learn"
+            style="@style/h2"
+            android:text="Lean about our training philosophy"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"/>
+        <TextView
+            style="@style/h2"
+            android:text="Types of Runs You will Do"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"/>
+        <TextView
+            style="@style/h2"
+            android:text="Weekly Overview"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18weeks to Go"
+                android:id="@+id/week"/>
+            <TextView
+                style="@style/h2"
+                android:text="Welcome to the Starting Line"/>
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/plan_txt"
+                android:text="@string/plan_week"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/h2"
+                    android:text="Meet the Coach"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/plan_txt"
+                    android:text="@string/coach1"/>
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:src="@drawable/coach_1"/>
+                <TextView
+                    style="@style/h2"
+                    android:text="Coach Bennett"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    style="@style/plan_txt"
+                    android:text="@string/coach1_ex"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Veiw Profile"
+                    android:backgroundTint="#fff"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="플랜 시작"
+                android:backgroundTint="#000"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

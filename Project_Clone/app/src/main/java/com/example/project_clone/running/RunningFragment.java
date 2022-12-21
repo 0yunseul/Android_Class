@@ -35,7 +35,6 @@ public class RunningFragment extends Fragment {
             public void onTabSelected(TabLayout.Tab tab) {
                 int position = tab.getPosition();
                 Fragment selected = null;
-
                 if(position == 0){
                     selected = now;
                 }else if (position == 1){
