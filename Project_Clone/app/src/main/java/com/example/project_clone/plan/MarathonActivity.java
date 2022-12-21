@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -17,9 +18,9 @@ import com.example.project_clone.R;
 
 public class MarathonActivity extends AppCompatActivity {
     VideoView v;
-    Button btn;
+   // Button btn;
     ImageView back;
-    TextView learn;
+    //LinearLayout learn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,16 +49,16 @@ public class MarathonActivity extends AppCompatActivity {
         });
 
 
-        btn.setOnClickListener(new View.OnClickListener() {
+    /*    btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MarathonActivity.this, VideoViewActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
 
-        /*learn 누르면 연결 오류 액티비티로 연결*/
+        /*learn 누르면 연결 오류 액티비티로 연결
         learn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,7 +66,7 @@ public class MarathonActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+*/
 
 
     }

@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 
 import com.example.project_clone.R;
 
+import java.util.Set;
 import java.util.zip.Inflater;
 
 public class UserProfileActivity extends AppCompatActivity {
@@ -43,7 +44,8 @@ public class UserProfileActivity extends AppCompatActivity {
         ln_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                Intent intent = new Intent(UserProfileActivity.this,ShoesActivity.class);
+                startActivity(intent);
             }
         });
         /*패스*/
@@ -60,7 +62,8 @@ public class UserProfileActivity extends AppCompatActivity {
         ln_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+            Intent intent = new Intent(UserProfileActivity.this,SettingActivity.class);
+            startActivity(intent);
             }
         });
     }

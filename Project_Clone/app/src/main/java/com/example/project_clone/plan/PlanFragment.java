@@ -1,6 +1,10 @@
 package com.example.project_clone.plan;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.media.session.MediaController;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,21 +14,47 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.VideoView;
 
 import com.example.project_clone.R;
+import com.example.project_clone.activity.AddActivity;
+import com.example.project_clone.home.UserProfileActivity;
 
 import java.util.ArrayList;
 
 
 public class PlanFragment extends Fragment {
     RecyclerView recv_p;
+    ImageView user,video;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_plan, container, false);
         recv_p = v.findViewById(R.id.recv_plan);
+        user = v.findViewById(R.id.user);
+        video = v.findViewById(R.id.plan_video);
+
+
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),UserProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), AddActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
         ArrayList<PlanDTO> list = new ArrayList<>();

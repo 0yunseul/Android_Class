@@ -11,25 +11,30 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
         <VideoView
             android:id="@+id/vv"
             android:layout_width="match_parent"
             android:layout_height="450dp"
             android:visibility="visible">
         </VideoView>
-        <ImageView
+
+            <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:scaleType="fitXY"
             android:layout_margin="15dp"
             android:id="@+id/back"
             android:src="@drawable/ic_arrow_left_white"/>
-            <ImageView
-            android:layout_width="29dp"
-            android:layout_height="29dp"
 
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="29dp"
                 android:layout_alignParentRight="true"
-                android:layout_margin="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
                 android:src="@drawable/ic_share_white" />
         <TextView
           android:layout_marginTop="200dp"
@@ -142,10 +147,16 @@
                 style="@style/plan_txt"
                 android:text="@string/level"/>
         </LinearLayout>
-        <TextView
+
+        <LinearLayout
             android:id="@+id/learn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
             style="@style/h2"
             android:text="Lean about our training philosophy"/>
+        </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

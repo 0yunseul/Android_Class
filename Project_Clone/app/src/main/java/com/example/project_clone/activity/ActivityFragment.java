@@ -1,5 +1,7 @@
 package com.example.project_clone.activity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,11 +14,14 @@ import android.widget.ImageView;
 //import com.bumptech.glide.Glide;
 import com.bumptech.glide.Glide;
 import com.example.project_clone.R;
+import com.example.project_clone.home.UserProfileActivity;
 
 
 public class ActivityFragment extends Fragment {
 
-    ImageView gif;
+    ImageView gif, user,add;
+
+    @SuppressLint("SuspiciousIndentation")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -26,6 +31,24 @@ public class ActivityFragment extends Fragment {
     gif = v.findViewById(R.id.gif_img);
         Glide.with(this).load(R.drawable.activity_main).into(gif);
 
+    user = v.findViewById(R.id.user);
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), UserProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+    add = v.findViewById(R.id.add);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), AddActivity.class);
+                startActivity(intent);
+
+            }
+        });
      return v;
     }
 }

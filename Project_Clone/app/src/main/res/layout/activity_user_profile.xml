@@ -112,6 +112,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/msg"
+                android:textSize="18dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="수신함" />
@@ -127,33 +128,30 @@
                 android:layout_alignParentRight="true"/>
         </RelativeLayout>
         <LinearLayout
+            android:layout_margin="15dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:orientation="vertical">
-
             <TextView
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="친구"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:text="친구 추가"
-                android:backgroundTint="#fff"
-                android:textColor="#000"/>
-        </LinearLayout>
 
-        <FrameLayout
+        </LinearLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:background="@color/bg">
             <TextView
-
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="회원가입일 2022년 12월"/>
-        </FrameLayout>
+                android:text="회원 가입일: 2022년 12월"/>
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

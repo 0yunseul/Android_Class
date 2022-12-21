@@ -3,16 +3,16 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="home">더 많은 걸 찾으시나요? \n러닝 시작! </string>
     <string name="activity_content">페이스 같은 건 잊고 그냥 달려보세요. NRC와 함께\n러닝을 완료한 후에는 여기에서 러닝 거리, 통계, 달성\n기록을 확인할 수 있습니다. </string>
-    <string name="plan_explain">NRC training plans give you weekly\n coaching and guidance to help you\n reach your goals.</string>
-    <string name="plan_ex_video">You will get the guidance, motivation and\n inspiration to run better, faster, further,\n recover better and have more fun. The goal is\n
-to not only get you stronger and faster,\n but also smarter. We believe that becoming a\n better athlete involves becoming a better\n coach.</string>
-    <string name="plan_txt_2">Audio-Guided Runs\n &amp; Music</string>
+    <string name="plan_explain">NRC training plans give you weekly coaching and guidance to help you reach your goals.</string>
+    <string name="plan_ex_video">You will get the guidance, motivation and\n inspiration to run better, faster, further, recover better and have more fun. The goal is
+to not only get you stronger and faster, but also smarter. We believe that becoming a\n better athlete involves becoming a better\n coach.</string>
+    <string name="plan_txt_2">Audio-Guided Runs &amp; Music</string>
     <string name="plan_p1_tv1">18-Week Training Plan</string>
-    <string name="plan_p1_tv2">Guidance on running, recovery, strength\n training and mindset to prepare you for the\n journey of a lifetime. </string>
+    <string name="plan_p1_tv2">Guidance on running, recovery, strength training and mindset to prepare you for the\n journey of a lifetime. </string>
     <string name="plan_p2_tv1">4-Week Training Plan</string>
     <string name="plan_p2_tv2">Everything you need to get started and\n keep going</string>
     <string name="plan_p3_tv1">8-Week Training Plan</string>
-    <string name="plan_p3_tv2">A fun, exciting combination of speed,\n endurance, recovery and motivation to get you\n ready to tackle a 5K.</string>
+    <string name="plan_p3_tv2">A fun, exciting combination of speed, endurance, recovery and motivation to get you\n ready to tackle a 5K.</string>
     <string name="plan_p4_tv1">14-Week Training Plan</string>
     <string name="plan_p4_tv2">Combines Speed Runs, Long Runs, Recovery\n Runs and Rest Days to help get you ready to\n run your best Half-Marathon.</string>
 
@@ -21,8 +21,8 @@ to not only get you stronger and faster,\n but also smarter. We believe that bec
     <string name="plan_btn_3"> 초급</string>
     <string name="plan_btn_4"> 모든 레벨</string>
 
-    <string name="plan_overview">This training plan is built to help the best\n version of you reach the starting line of your\n Marathon. The programme is a maximum of\n 18 weeks long. We recommend that you begin\n this programme with no less than 12 weeks to\n go before your race date.</string>
-    <string name="level">This plan is built for all runners. We offer up to\n 5 runs each week. We recommend that you\n do at least 3 runs per week and have worked\n up to a consistent running routine prior to\n starting. For every easy and Long Run, you\n can go shorter or longer based on your\n fitness. Check in with your body and make\n adjustments as needed. Remember, you are\n becoming your own best coach as you\n progress through this plan.</string>
+    <string name="plan_overview">This training plan is built to help the best version of you reach the starting line of your\n Marathon. The programme is a maximum of\n 18 weeks long. We recommend that you begin this programme with no less than 12 weeks to go before your race date.</string>
+    <string name="level">This plan is built for all runners. We offer up to 5 runs each week. We recommend that you\n do at least 3 runs per week and have worked\n up to a consistent running routine prior to starting. For every easy and Long Run, you can go shorter or longer based on your fitness. Check in with your body and make adjustments as needed. Remember, you are becoming your own best coach as you progress through this plan.</string>
     <string name="plan_week">This week you will begin your journey with a\n series of runs and light workouts that\n introduce you to the training plan.</string>
 
     <string name="pass">간편하게 체크인하고 모든 나이키 매장과 이벤트를 통해 맞춤형 서비스를 받아보세요</string>
@@ -41,12 +41,12 @@ to not only get you stronger and faster,\n but also smarter. We believe that bec
     <string name="ch_tv2_25">이번 달 25km를 달려보세요</string>
     <string name="ch_tv2_30">이번 달에 30km를 달려보세요</string>
 
-    <string name="ch_30k">30K 챌린지에 참여할 시간입니다! 이번 달에\n 30km를 달리고 완주자 기록을 달성하세요.</string>
-    <string name="ch_25k">25K 챌린지에 참여할 시간입니다! 이번 달에\n 25km를 달리고 완주자 기록을 달성하세요.</string>
-    <string name="ch_100k">100K 챌린지에 참여할 시간입니다! 이번 달에\n 100km를 달리고 완주자 기록을 달성하세요.</string>
-    <string name="ch_10k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번\n 주에 10km를 달리면 특별한 완주자 기록을 달성할 수\n 있습니다.</string>
-    <string name="ch_5k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번\n 주에 5km를 달리면 특별한 완주자 기록을 달성할 수\n 있습니다.</string>
-    <string name="ch_15k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번\n 주에 15km를 달리면 특별한 완주자 기록을 달성할 수\n 있습니다.</string>
+    <string name="ch_30k">30K 챌린지에 참여할 시간입니다! 이번 달에 30km를 달리고 완주자 기록을 달성하세요.</string>
+    <string name="ch_25k">25K 챌린지에 참여할 시간입니다! 이번 달에 25km를 달리고 완주자 기록을 달성하세요.</string>
+    <string name="ch_100k">100K 챌린지에 참여할 시간입니다! 이번 달에 100km를 달리고 완주자 기록을 달성하세요.</string>
+    <string name="ch_10k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번 주에 10km를 달리면 특별한 완주자 기록을 달성할 수 있습니다.</string>
+    <string name="ch_5k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번 주에 5km를 달리면 특별한 완주자 기록을 달성할 수 있습니다.</string>
+    <string name="ch_15k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번 주에 15km를 달리면 특별한 완주자 기록을 달성할 수\있습니다.</string>
 
 
     <string name="empty"> agr_empty_runs_saved_title</string>
@@ -58,5 +58,5 @@ to not only get you stronger and faster,\n but also smarter. We believe that bec
     <string name="a">개요</string>
     <string name="b">러닝구성</string>
 
-    <string name="diconn">죄송합니다. 이 컨텐츠를 로드할 수 없습니다. </string>
+    <string name="diconn">죄송합니다. 이 컨텐츠를 로드할 수 없습니다. 새로 고치거나 나중에 다시 시도해 주세요</string>
 </resources>

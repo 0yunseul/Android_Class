@@ -18,6 +18,7 @@
             style="@style/user"
             android:src="@drawable/user"/>
         <ImageView
+            android:id="@+id/add"
             style="@style/top_right"
             android:src="@drawable/ic_plus"/>
     </RelativeLayout>

@@ -20,15 +20,35 @@
         android:layout_height="match_parent"
         android:background="@color/bg"
         android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="300dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
         <TextView
             style="@style/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="연결 오류 "/>
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="연결 오류 " />
         <TextView
+            android:gravity="center"
+            android:id="@+id/d_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" "/>
+            android:text="@string/diconn"/>
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:id="@+id/d_3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="재시도"
+            android:backgroundTint="#000"/>
+        </LinearLayout>
 
     </LinearLayout>
 
