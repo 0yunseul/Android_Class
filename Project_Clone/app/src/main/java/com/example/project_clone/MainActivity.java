@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
        changeFragment(container,new HomeFragment());
 
 
+
         btm_nav = findViewById(R.id.btm_nav);
         btm_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

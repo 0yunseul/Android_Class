@@ -21,6 +21,7 @@
             android:orientation="horizontal">
             <!--첫번째 항목-->
         <LinearLayout
+            android:id="@+id/save"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,6 +42,7 @@
 
             <!--2번째-->
             <LinearLayout
+                android:id="@+id/all_run"
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,6 +62,7 @@
             </LinearLayout>
             <!--3번째-->
             <LinearLayout
+                android:id="@+id/fin"
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,6 +82,7 @@
             </LinearLayout>
             <!--4번째-->
             <LinearLayout
+                android:id="@+id/download"
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,6 +114,7 @@
             android:orientation="horizontal">
             <!--첫번째 항목-->
                 <LinearLayout
+                    android:id="@+id/run_7m"
                     android:layout_margin="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -180,16 +185,18 @@
         <TextView
             android:id="@+id/h3"
             android:text="컬렉션 시작하기"
-            style="@style/h2"/>
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
+            style="@style/tv1"/>
         <TextView
-            style="@style/h2"
+            style="@style/tv2"
             android:layout_alignParentRight="true"
             android:text="전체"/>
         <TextView
             android:layout_below="@+id/h3"
             android:text="러닝 유형을 살펴본 후 시작하기"
             style="@style/below_title"
-            android:textSize="25dp"/>
+            android:textSize="22dp"/>
     </RelativeLayout>
     <!--컬렉션 시작하기 리사이클러뷰-->
     <androidx.recyclerview.widget.RecyclerView
@@ -204,16 +211,18 @@
         <TextView
             android:id="@+id/short_d"
             android:text="단거리 러닝"
-            style="@style/h2"/>
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
+            style="@style/tv1"/>
         <TextView
-            style="@style/h2"
+            style="@style/tv2"
             android:layout_alignParentRight="true"
             android:text="전체"/>
         <TextView
             android:layout_below="@+id/short_d"
             android:text="러닝 시작하기(30분 미만)"
             style="@style/below_title"
-            android:textSize="25dp"/>
+            android:textSize="22dp"/>
     </RelativeLayout>
     <!--단거리러닝 가로 스크롤뷰-->
     <HorizontalScrollView
@@ -285,17 +294,19 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/long_d"
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
             android:text="장거리 러닝"
-            style="@style/h2"/>
+            style="@style/tv1"/>
         <TextView
-            style="@style/h2"
+            style="@style/tv2"
             android:layout_alignParentRight="true"
             android:text="전체"/>
         <TextView
             android:layout_below="@+id/long_d"
             android:text="러닝으로 지구력 키우기(30분 이상)"
             style="@style/below_title"
-            android:textSize="25dp"/>
+            android:textSize="22dp"          />
     </RelativeLayout>
     <!--장거리러닝 가로 스크롤뷰-->
     <HorizontalScrollView
@@ -350,16 +361,16 @@
         <TextView
             android:id="@+id/speed"
             android:text="스피드러닝"
-            style="@style/h2"/>
+            style="@style/tv1"/>
         <TextView
-            style="@style/h2"
+            style="@style/tv2"
             android:layout_alignParentRight="true"
             android:text="전체"/>
         <TextView
             android:layout_below="@+id/speed"
             android:text="스피드를 향상시켜주는 인터벌 운동"
             style="@style/below_title"
-            android:textSize="25dp"/>
+            android:textSize="22dp"/>
     </RelativeLayout>
     <!--스피드러닝 리사이클러뷰-->
     <androidx.recyclerview.widget.RecyclerView
@@ -374,29 +385,49 @@
         <TextView
             android:id="@+id/m"
             android:text="Mindful Running"
-            style="@style/h2"/>
+            android:textSize="15dp"
+            style="@style/tv1"/>
         <TextView
-            style="@style/h2"
+            style="@style/tv2"
             android:layout_alignParentRight="true"
             android:text="전체"/>
         <TextView
             android:layout_below="@+id/m"
+            android:text="Connect your minde ad body with mindfulness runs. Audio in English."
             style="@style/below_title"
-            android:textSize="25dp"/>
+            android:textSize="22dp"/>
     </RelativeLayout>
+
     <!--mindful running 리사이클러뷰-->
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recv_mind"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/t"
+            android:text="Treadmil Runs"
+            android:textSize="15dp"
+            style="@style/tv1"/>
+        <TextView
+            style="@style/tv2"
+            android:layout_alignParentRight="true"
+            android:text="전체"/>
+        <TextView
+            android:layout_below="@+id/t"
+            android:text="Runs made for the treadmill. Audio in English."
+            style="@style/below_title"
+            android:textSize="22dp"/>
+    </RelativeLayout>
+
     <!--Treadmill Runs : 리사이클러뷰-->
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recv_tread"/>
-
-
 
 
 </LinearLayout>

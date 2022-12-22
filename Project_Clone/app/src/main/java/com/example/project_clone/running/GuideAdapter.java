@@ -40,6 +40,7 @@ public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.ViewHolder> 
         h.tv.setText(list.get(i).tv);
     }
 
+
     @Override
     public int getItemCount() {
         return list.size();

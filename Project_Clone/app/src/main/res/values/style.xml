@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="main_style">
-
+    <!--상단 닫기버튼 이미지 스타일-->
+    <style name="back">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
     </style>
-    <!--닫기버튼 이미지 스타일-->
-
-
     <!--상단 유저이미지 스타일-->
     <style name="user">
-        <item name="android:layout_width">45dp</item>
-        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
     </style>
-
-
     <!--상단 우측 이미지 스타일-->
     <style name="top_right">
         <item name="android:layout_width">35dp</item>
@@ -20,32 +18,111 @@
         <item name="android:layout_centerInParent">true</item>
         <item name="android:layout_alignParentRight">true</item>
     </style>
-
-    <style name="h_tv1">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">15dp</item>
-        <item name="android:textColor">#000</item>
-    </style>
-
-    <!--페이지 내 타이틀 글씨-->
+    <!--페이지 내 타이틀 글씨:홈.플랜.러닝.클럽.활동-->
     <style name="title">
+        <item name="android:fontFamily">@font/nanumsquareneo_b_rg</item>
         <item name="android:layout_marginTop">15dp</item>
-        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">20dp</item>
         <item name="android:textColor">#000</item>
     </style>
 
+    <!--페이지 내 상단 타이틀 글씨: 러닝.클럽-->
+    <style name="top_title">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:fontFamily">@font/nanumsquareneo_b_rg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    <!--구분선-->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#DDDDDD</item>
+    </style>
+    <!--탭 레이아웃-->
+    <style name ="tab">
+        <item name="android:fontFamily">@font/nanumsquareneo_b_rg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="tabTextColor">#CCCCCC</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabIndicatorColor">@color/transparent</item>
+        <item name="tabRippleColor">@color/transparent</item>
+
+    </style>
+
+    <!--레이아웃내 타이틀(강조) 글씨-->
+    <style name="tv1">
+        <item name="android:fontFamily">@font/nanumsquareneo_b_rg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <!--레이아웃내 타이틀 하단(강조) 글씨-->
+    <style name="tv2">
+        <item name="android:fontFamily">@font/nanumsquareneo_b_rg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">#909090</item>
+    </style>
+
+    <!--레이아웃내 일반 글씨-->
+    <style name="tv3">
+        <item name="android:fontFamily">@font/nanumsquareneo_a_lt</item>
+        <item name="android:textColor">#767676</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+    ----------------------------
+    <!--actvity_add _layout -->
+    <style name="running_add_l">
+        <item name="android:background">@drawable/edge</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <!--actvity_add_text_1글씨-->
+    <style name="running_add_t1">
+         <item name="android:layout_centerVertical">true</item>
+        <item name="android:fontFamily">@font/nanumsquareneo_b_rg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!--actvity_add_text_2글씨-->
+    <style name="running_add_t2">
+        <item name="android:fontFamily">@font/nanumsquareneo_a_lt</item>
+        <item name="android:textSize">15dp</item>
+      <item name="android:layout_centerVertical">true</item>
+      <item name="android:layout_alignParentRight">true</item>
+       <item name="android:layout_width">wrap_content</item>
+       <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#767676</item>
+    </style>
+---------------------------
     <!--타이틀 하단 글씨-->
     <style name="below_title">
+        <item name="android:fontFamily">@font/nanumsquareneo_b_rg</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <!--plan 헤드라인 글씨 -->
+    <!--plan , club 헤드라인 글씨 -->
     <style name="h2">
+        <item name="android:fontFamily">@font/nanumsquareneo_b_rg</item>
         <item name="android:layout_marginLeft">15dp</item>
         <item name="android:layout_marginTop">15dp</item>
         <item name="android:layout_marginBottom">15dp</item>
@@ -53,6 +130,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">15dp</item>
         <item name="android:textColor">#000</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <!--plan 탭 아이콘  4개 -->
@@ -62,13 +140,13 @@
     </style>
     <!--plan 탭 아이콘 하단 글씨 4개 -->
     <style name="plan_txt">
+        <item name="android:fontFamily">@font/nanumsquareneo_b_rg</item>
         <item name="android:layout_width">100dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">15dp</item>
+        <item name="android:textSize">14dp</item>
     </style>
 
-    <!--러닝 가이드 리사이클러뷰 아이템_리니어-->
-<!-- -->
+
     <!--러닝 가이드 리사이클러뷰 아이템_이미지뷰-->
     <style name="rg_item_img">
      <item name="android:scaleType">fitXY</item>
@@ -82,4 +160,6 @@
         <item name="android:layout_height">wrap_content</item>
        <item name="android:layout_marginTop">15dp</item>
     </style>
+
+
 </resources>

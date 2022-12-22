@@ -15,6 +15,7 @@ public class AddActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+
         close = findViewById(R.id.close);
         close.setOnClickListener(new View.OnClickListener() {
             @Override

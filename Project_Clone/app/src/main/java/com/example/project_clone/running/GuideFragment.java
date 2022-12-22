@@ -1,5 +1,7 @@
 package com.example.project_clone.running;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,19 +11,60 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.example.project_clone.R;
+import com.example.project_clone.home.UserProfileActivity;
 import com.example.project_clone.plan.PlanAdapter;
 
 import java.util.ArrayList;
 
 public class GuideFragment extends Fragment {
     RecyclerView recv_collection,  recv_mind, recv_tread;
+    LinearLayout ln_save,ln_all,ln_complete,ln_download;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_guide,container,false);
+
+        ln_save =v.findViewById(R.id.save);
+        ln_save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Empty_Activity.class);
+              startActivity(intent);
+            }
+        });
+
+        ln_all =v.findViewById(R.id.all_run);
+        ln_all.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Running_allActivity.class);
+             startActivity(intent);
+
+            }
+        });
+
+        ln_complete = v.findViewById(R.id.fin);
+        ln_complete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), CompleteActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ln_download = v.findViewById(R.id.download);
+        ln_download.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), FinishActivity.class);
+                getContext().startActivity(intent);
+            }
+        });
+
 
         recv_collection = v.findViewById(R.id.recv_collection);
         recv_mind = v.findViewById(R.id.recv_mind);

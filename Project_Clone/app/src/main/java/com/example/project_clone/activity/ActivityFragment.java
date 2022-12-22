@@ -21,7 +21,7 @@ public class ActivityFragment extends Fragment {
 
     ImageView gif, user,add;
 
-    @SuppressLint("SuspiciousIndentation")
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

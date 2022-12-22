@@ -21,19 +21,25 @@
             android:layout_height="100dp"
             android:src="@drawable/user"
             android:layout_gravity="center"/>
+
         <TextView
-            style="@style/title"
-            android:text="박주영"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_gravity="center"/>
-        <Button
+            android:textColor="#000"
+            android:textSize="22dp"
+            android:text="박주영" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit"
+           android:backgroundTint="#fff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="프로필 편집"
-            android:backgroundTint="#fff"
-            android:textColor="#000"/>
+            android:textColor="#000" />
 
         <LinearLayout
 
@@ -59,10 +65,10 @@
                     android:text="내 러닝화"/>
             </LinearLayout>
             <View
+                style="@style/line"
                 android:layout_margin="25dp"
                 android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#CCCCCC"/>
+                android:layout_height="match_parent" />
 
             <LinearLayout
                 android:id="@+id/ln_2"
@@ -82,10 +88,10 @@
                     android:text="패스"/>
             </LinearLayout>
             <View
+                style="@style/line"
                 android:layout_margin="25dp"
                 android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#CCCCCC"/>
+                android:layout_height="match_parent" />
             <LinearLayout
                 android:id="@+id/ln_3"
                 android:layout_width="wrap_content"
@@ -122,8 +128,8 @@
                 android:layout_height="wrap_content"
                 android:text="메세지 보기"/>
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/go"
+                style="@style/top_right"
                 android:src="@drawable/ic_arrow_right"
                 android:layout_alignParentRight="true"/>
         </RelativeLayout>
@@ -133,9 +139,9 @@
             android:layout_height="100dp"
             android:orientation="vertical">
             <TextView
-                android:textColor="#000"
-                android:textSize="15dp"
-                android:textStyle="bold"
+
+                style="@style/tv1"
+                android:textSize="18dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="친구"/>

@@ -18,9 +18,9 @@ import com.example.project_clone.R;
 
 public class MarathonActivity extends AppCompatActivity {
     VideoView v;
-   // Button btn;
+
     ImageView back;
-    //LinearLayout learn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class MarathonActivity extends AppCompatActivity {
         Uri videouri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.marathon_video);
         v.setMediaController(new MediaController(this));
         v.setVideoURI(videouri);
+        v.setMinimumHeight(450);
         v.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mp) {

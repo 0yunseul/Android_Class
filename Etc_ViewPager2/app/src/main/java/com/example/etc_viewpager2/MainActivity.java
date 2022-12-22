@@ -21,10 +21,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         CommonAdapter adapter = new CommonAdapter(getLayoutInflater() );
+
         RecyclerView.LayoutManager manager = new LinearLayoutManager(
                 this,RecyclerView.HORIZONTAL,false
         );
+
         recv = findViewById(R.id.recv);
         pager2 = findViewById(R.id.pager2);
 

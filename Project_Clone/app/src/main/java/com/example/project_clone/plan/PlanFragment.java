@@ -27,17 +27,16 @@ import java.util.ArrayList;
 
 public class PlanFragment extends Fragment {
     RecyclerView recv_p;
-    ImageView user,video;
+    ImageView user;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_plan, container, false);
+
         recv_p = v.findViewById(R.id.recv_plan);
         user = v.findViewById(R.id.user);
-        video = v.findViewById(R.id.plan_video);
-
 
         user.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,15 +45,6 @@ public class PlanFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
-        video.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), AddActivity.class);
-                startActivity(intent);
-            }
-        });
-
 
 
         ArrayList<PlanDTO> list = new ArrayList<>();
@@ -70,7 +60,6 @@ public class PlanFragment extends Fragment {
 
         RecyclerView.LayoutManager m = new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false);
         recv_p.setLayoutManager(m);
-
 
 
         return v;

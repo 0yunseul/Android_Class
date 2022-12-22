@@ -1,9 +1,13 @@
 package com.example.project_clone.home;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,12 +22,11 @@ import com.example.project_clone.running.RunningFragment;
 
 
 public class HomeFragment extends Fragment {
-
-
     ImageView user_img;
     TextView all;
     Button btn;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -37,29 +40,16 @@ public class HomeFragment extends Fragment {
         user_img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(),UserProfileActivity.class); //현재 activity명시, 다음 activity class
-                getContext().startActivity(intent);
-
+                Intent intent = new Intent(getActivity(),UserProfileActivity.class);
+               startActivity(intent);
             }
-
         });
-
 
         all.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(),AllActivity.class);
-                getContext().startActivity(intent);
-            }
-        });
-
-        /*버튼클릭시 러닝 프래그먼트로 이동*/
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-                
+                Intent intent = new Intent(getActivity(),AllActivity.class);
+              startActivity(intent);
             }
         });
 

@@ -4,13 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".running.RunningFragment">
-
+    tools:context=".running.RunningFragment"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
     <RelativeLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
@@ -18,11 +20,10 @@
             style="@style/user"
             android:src="@drawable/user"/>
         <TextView
-            style="@style/below_title"
-            android:text="러닝"
-            android:textSize="20dp"
-            android:layout_centerInParent="true"/>
+            style="@style/top_title"
+            android:text="러닝"   />
         <ImageView
+            android:id="@+id/save"
             style="@style/top_right"
             android:src="@drawable/ic_save"/>
     </RelativeLayout>
@@ -32,21 +33,13 @@
 
         <!--바로 시작 / 러닝 가이드 -->
             <com.google.android.material.tabs.TabLayout
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                app:tabTextColor="#CCCCCC"
-                app:tabSelectedTextColor="@color/black"
-                app:tabIndicatorColor="@color/black"
-                app:tabRippleColor="@color/white"
+                style="@style/tab"
                 android:id="@+id/tab_running">
-
             </com.google.android.material.tabs.TabLayout>
        <FrameLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:layout_weight="1"
            android:id="@+id/run_frame"/>
-
-
     </LinearLayout>
 </LinearLayout>

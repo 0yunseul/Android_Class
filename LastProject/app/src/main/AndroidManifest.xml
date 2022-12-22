@@ -16,7 +16,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".exam.ExamActivity"
+            android:name=".customer.CustomerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,10 +28,17 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".exam.ExamActivity"
             android:exported="false">
 
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="false">

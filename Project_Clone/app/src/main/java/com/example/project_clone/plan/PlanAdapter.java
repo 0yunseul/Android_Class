@@ -2,6 +2,7 @@ package com.example.project_clone.plan;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,7 @@ public class PlanAdapter extends RecyclerView.Adapter<PlanAdapter.ViewHolder> {
         this.context = context;
     }
 
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -49,6 +51,7 @@ public class PlanAdapter extends RecyclerView.Adapter<PlanAdapter.ViewHolder> {
         public void onClick(View v) {
             Intent intent = new Intent(context, MarathonActivity.class);
             context.startActivity(intent);
+
         }
     });
 
@@ -71,10 +74,15 @@ public class PlanAdapter extends RecyclerView.Adapter<PlanAdapter.ViewHolder> {
         tv2 = v.findViewById(R.id.tv2);
         btn1 = v.findViewById(R.id.btn1);
         ln_plan = v.findViewById(R.id.ln_plan);
+
+
+            }
+
     }
 
 
 
 
+
 }
-}
+

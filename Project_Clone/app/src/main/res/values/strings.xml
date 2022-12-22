@@ -27,6 +27,8 @@ to not only get you stronger and faster, but also smarter. We believe that becom
 
     <string name="pass">간편하게 체크인하고 모든 나이키 매장과 이벤트를 통해 맞춤형 서비스를 받아보세요</string>
 
+    <string name="guide_run_1">A 30minute run with 1minute of post run guidance and cool down.</string>
+
 
     <string name="ch_w">12월 주간 챌린지</string>
     <string name="ch_tv2_15">이번주 15km를 달려보세요</string>
@@ -48,9 +50,6 @@ to not only get you stronger and faster, but also smarter. We believe that becom
     <string name="ch_5k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번 주에 5km를 달리면 특별한 완주자 기록을 달성할 수 있습니다.</string>
     <string name="ch_15k">주간 챌린지 완주로 자신의 한계를 넘어보세요. 이번 주에 15km를 달리면 특별한 완주자 기록을 달성할 수\있습니다.</string>
 
-
-    <string name="empty"> agr_empty_runs_saved_title</string>
-    <string name="empty_sub"> agr_empty_runs_saved_subtitle</string>
 
     <string name="coach1">Each week, your Coach will introduce the focus areas and workouts ahead. You wll also have the option to hear from them on every Guided Run.</string>
     <string name="coach1_ex">Chris Bennett is the Nike Running Global Head Coach. Coach Bennett is an NRC pioneer that helped build the Nike Run Club from the ground up.</string>

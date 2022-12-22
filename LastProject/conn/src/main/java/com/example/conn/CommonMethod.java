@@ -11,7 +11,7 @@ public class CommonMethod {
     // Spring에 연결 후 데이터를 가지고 오는 처리를 해야함.
     // 어떤식으로 바뀌면 재활용이 편할까???
     private HashMap<String , Object> params = new HashMap<>();
-    public CommonMethod setParams(String key , String value){
+    public CommonMethod setParams(String key , Object value){
         params.put(key,value);
         return this;
     }

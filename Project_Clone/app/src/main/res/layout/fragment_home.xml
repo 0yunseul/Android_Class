@@ -10,65 +10,83 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <ImageView
-            android:id="@+id/user"
-            style="@style/user"
-            android:src="@drawable/user"/>
-        <TextView
-            android:layout_margin="15dp"
-            style="@style/title"
-            android:text="홈"
-            android:textSize="20dp"/>
-        <View
+        <RelativeLayout
+            android:background="@color/bg"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#DDDDDD"/>
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="15dp"
+                android:id="@+id/user"
+                style="@style/user"
+                android:src="@drawable/user"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/user"
+                style="@style/title"
+                android:text="홈"/>
+        </RelativeLayout>
+        <View
+            style="@style/line"/>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff">
+            android:background="@color/white">
         <RelativeLayout
+            android:layout_marginLeft="15dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp">
+            android:layout_height="wrap_content">
             <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
                 android:id="@+id/h_tv1"
-                style="@style/h_tv1"
+                style="@style/tv1"
                 android:text="새로운 소식"/>
             <TextView
                 android:id="@+id/all"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="모두 보기"
-                android:layout_alignParentRight="true"/>
+                style="@style/tv3"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="모두 보기" />
             <TextView
                 android:layout_below="@+id/h_tv1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/tv2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
                 android:text="나이키 러닝의 최신 소식을 확인해 보세요."/>
         </RelativeLayout>
-
-            <!--이미지 가로로 스크롤되게하는 뷰페이저추가하기-->
-             <RelativeLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content">
-                <androidx.viewpager2.widget.ViewPager2
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/pager2"/>
-                 <!--뷰페이저의 indicators-->
-                <LinearLayout
-                    android:id="@+id/layoutIndicators"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:paddingBottom="8dp"
-                    android:layout_below="@+id/pager2"
-                   android:layout_centerInParent="true" />
-             </RelativeLayout>
+               <HorizontalScrollView
+                   android:layout_width="500dp"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_width="500dp"
+                       android:layout_height="500dp">
+                   <ImageView
+                       android:layout_width="400dp"
+                       android:layout_height="500dp"
+                       android:src="@drawable/home_01"/>
+                   <ImageView
+                       android:layout_width="400dp"
+                       android:layout_height="500dp"
+                       android:src="@drawable/home_02"/>
+                   <ImageView
+                           android:layout_width="400dp"
+                           android:layout_height="500dp"
+                           android:src="@drawable/home_03"/>
+                       <ImageView
+                           android:layout_width="400dp"
+                           android:layout_height="500dp"
+                           android:src="@drawable/home_04"/>
+                       <ImageView
+                           android:layout_width="400dp"
+                           android:layout_height="500dp"
+                           android:src="@drawable/home_05"/>
+                   </LinearLayout>
+               </HorizontalScrollView>
         </LinearLayout>
         <LinearLayout
             android:background="#fff"
@@ -76,12 +94,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:layout_margin="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="커뮤니티 활동"
-                android:textColor="#000"/>
-
+                style="@style/h2"
+                android:text="커뮤니티 활동"  />
             <ImageView
                 android:scaleType="fitXY"
                 android:layout_width="wrap_content"
@@ -104,12 +118,13 @@
             android:layout_margin="15dp"
             android:text="@string/home"/>
 
-            <Button
+            <android.widget.Button
+              android:textColor="#fff"
+                android:background="@drawable/btn_layout_round"
                 android:layout_margin="15dp"
                 android:id="@+id/start_running"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#000"
                 android:text="러닝 시작"/>
 
     </LinearLayout>

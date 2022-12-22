@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/back"
-            style="@style/user"
+            style="@style/back"
             android:src="@drawable/ic_arrow_left"/>
         <TextView
             android:layout_gravity="center"
@@ -68,32 +68,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/recv_1"/>
+            android:id="@+id/recv"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/recv_2"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/recv_3"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/recv_4"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/recv_5"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/recv_6"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="35dp">
@@ -102,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:textColor= "#F50505"
-                android:text="로그아웃"       />
+                android:text="로그아웃"   />
 
         </RelativeLayout>
        </LinearLayout>

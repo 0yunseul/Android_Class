@@ -18,7 +18,7 @@ import com.google.android.material.tabs.TabLayout;
 public class RunningFragment extends Fragment {
     TabLayout tab_running;
     Fragment now, guide;
-    ImageView user;
+    ImageView user,save;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,7 +33,14 @@ public class RunningFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
+        save = v.findViewById(R.id.save);
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),Empty_Activity.class);
+                startActivity(intent);
+            }
+        });
 
 
         now = new NowFragment();
