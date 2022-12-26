@@ -12,6 +12,7 @@ import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Build;
@@ -26,6 +27,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.conn.CommonMethod;
 import com.example.lastproject.R;
 
 import java.io.File;
@@ -59,7 +61,15 @@ public class JoinActivity extends AppCompatActivity {
 
         //회원가입버튼
         btn_join.setOnClickListener(v -> {
+            MemberVO vo = new MemberVO();
+            vo.setEmail(edt_email.getText().toString());
+            vo.setGender("남");
+            vo.setName(edt_name.getText().toString());
+            vo.setPw(edt_pw.getText().toString());
+        new CommonMethod().setParams("param",vo).sendPostFile("join.me", img_path, ((isResult, data) -> {
 
+
+        }));
         });
 
         //취소버튼
@@ -84,16 +94,25 @@ public class JoinActivity extends AppCompatActivity {
                      cameraMethod();
                     }else{
                         //갤러리 처리
+                        galleryMethod();
                     }
                 });
         AlertDialog dialog = builder.create();
         dialog.show();
     }
+    public void galleryMethod(){
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_PICK);
+        startActivityForResult(Intent.createChooser(intent, "select picture"), GALLERY_CODE);
+    }
+
 
     public void cameraMethod(){
         //카메라를 선택하는 메소드 만들기
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-         File file = createFile(); //임시파일 만들어오기 : provider 사용시 필요함
+         File file = new CommonMethod().createFile(this); //임시파일 만들어오기 : provider 사용시 필요함
+        img_path = file.getAbsolutePath();
         if (file != null){
             Uri imgUri = FileProvider.getUriForFile(this, getPackageName()+".fileprovider",file);
             if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
@@ -114,23 +133,17 @@ public class JoinActivity extends AppCompatActivity {
         if(requestCode == CAMERA_CODE && resultCode == RESULT_OK){
             Glide.with(this).load(img_path).into(imgv_profile);
             imgv_profile.setScaleType(ImageView.ScaleType.FIT_XY);
+        }else if (requestCode == GALLERY_CODE && resultCode == RESULT_OK){
+            Log.d("로그", "onActivityResult: "+data.getData());
+            Log.d("로그", "onActivityResult: "+data.getData().getPath());
+
+            img_path = new CommonMethod().getRealPath(data.getData(),this); //가짜 uri주소로 실제 물리적 파일 위치를 받아옴
+            Glide.with(this).load(img_path).into(imgv_profile);
         }
     }
 
-    // 카메라로 찍은 사진을 우리가 만든 임시파일로 가져오기 위한 메소드 처리.
-    public File createFile(){
-        String fileName = "LastProject" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        //사진파일을 저장하기 위한 경로 (이 부부은 따로 공부 x  버전 up 되면 계속해서 바뀜)
-            File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
-            File rtnFile = null; //IO입출력 exception이 발생하기 때문에 try{}catch블럭킹이 생김
-            try {
-                rtnFile = File.createTempFile(fileName, ".jpg", storageDir);
-            }catch (IOException e){
-                e.printStackTrace();
-            }
-            img_path = rtnFile.getAbsolutePath();
-            return rtnFile;
-    }
+
+
 
     // 권한레벨 - 낮음 : 인터넷 - 사용하겠다고 메니페스트에 명시만하면 OK
 // 권한레벨 - 중간 : 유튜브 - 사용하겠다고 메니페스트에 명시 후 queries 로 재명시 해줘야함.
