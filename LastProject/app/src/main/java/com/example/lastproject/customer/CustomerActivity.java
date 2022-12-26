@@ -30,7 +30,7 @@ public class CustomerActivity extends AppCompatActivity {
         selectList();
 
 
-        //스프링데이터 안드로         //안드로이드 시작점에서 한번만 해주면 된다.
+        //스프링데이터 안드로이드로        //안드로이드 시작점에서 한번만 해주면 된다.
 
 
                 /* new CommonMethod().sendPost("select.cu", new CommonMethod.CallBackResult() {

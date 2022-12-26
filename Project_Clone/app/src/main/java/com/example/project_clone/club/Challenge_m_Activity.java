@@ -14,9 +14,11 @@ public class Challenge_m_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(
-                R.layout.activity_challenge_mactivity);
-        back.findViewById(R.id.back);
+        setContentView(R.layout.activity_challenge_mactivity);
+
+        back =(ImageView) findViewById(R.id.back);
+
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

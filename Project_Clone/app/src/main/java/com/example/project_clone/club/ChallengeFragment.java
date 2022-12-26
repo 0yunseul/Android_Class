@@ -51,7 +51,6 @@ public class ChallengeFragment extends ClubFragment {
                 Intent intent = new Intent(getActivity(),Challenge_m_Activity.class);
                 startActivity(intent);
 
-
             }
         });
 
