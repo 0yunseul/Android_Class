@@ -1,0 +1,29 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml:2:1-4:12
+INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml:2:1-4:12
+INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml:2:1-4:12
+	package
+		INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+		ADDED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml:2:1-4:12
+		INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml:3:5-66
+	android:name
+		ADDED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml:3:22-64
+uses-sdk
+INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+		ADDED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+		INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+		ADDED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml
+		INJECTED from D:\Study_Android\WorkSpace\LastProject\conn\src\main\AndroidManifest.xml

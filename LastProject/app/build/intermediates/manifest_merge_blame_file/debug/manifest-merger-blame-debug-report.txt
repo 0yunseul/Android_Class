@@ -1,0 +1,329 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.lastproject"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml
+10    <!-- 인터넷 사용할때 필수 -->
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:6:5-81
+12-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:7:5-80
+13-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:7:22-77
+14    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+14-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:8:5-80
+14-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:8:22-77
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:9:5-65
+15-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:9:22-62
+16
+17    <uses-feature
+17-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:11:5-13:35
+18        android:name="android.hardware.camera2"
+18-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:12:9-48
+19        android:required="true" /> <!-- API30이상에서는 queries사용해서 권한부여를 한번 더 해야함. -->
+19-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:13:9-32
+20    <queries>
+20-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:14:5-43:15
+21
+22        <!-- WebView -->
+23        <intent>
+23-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:17:9-23:18
+24            <action android:name="android.intent.action.VIEW" />
+24-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:18:13-65
+24-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:18:21-62
+25
+26            <category android:name="android.intent.category.BROWSABLE" />
+26-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:20:13-74
+26-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:20:23-71
+27
+28            <data android:scheme="http" />
+28-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:22:13-43
+28-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:22:19-40
+29        </intent>
+30        <intent>
+30-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:24:9-30:18
+31            <action android:name="android.intent.action.VIEW" />
+31-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:18:13-65
+31-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:18:21-62
+32
+33            <category android:name="android.intent.category.BROWSABLE" />
+33-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:20:13-74
+33-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:20:23-71
+34
+35            <data android:scheme="https" />
+35-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:22:13-43
+35-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:22:19-40
+36        </intent>
+37        <!-- Camera -->
+38        <intent>
+38-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:32:9-34:18
+39            <action android:name="android.media.action.IMAGE_CAPTURE" />
+39-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:33:13-73
+39-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:33:21-70
+40        </intent>
+41        <!-- Gallery -->
+42        <intent>
+42-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:36:9-38:18
+43            <action android:name="android.intent.action.GET_CONTENT" />
+43-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:37:13-72
+43-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:37:21-69
+44        </intent>
+45        <!-- Youtube -->
+46        <intent>
+46-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:40:9-42:18
+47            <action android:name="android.media.browse.MediaBrowserService" />
+47-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:41:13-79
+47-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:41:21-76
+48        </intent>
+49        <!-- 네이버앱 : 로그인, 스킴로그인 -->
+50        <package android:name="com.nhn.android.search" /> <!-- 커스텀탭 로그인 -->
+50-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:16:9-58
+50-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:16:18-55
+51        <intent>
+51-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:18:9-20:18
+52            <action android:name="android.support.customtabs.action.CustomTabsService" />
+52-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:19:13-90
+52-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:19:21-87
+53        </intent>
+54
+55        <package android:name="com.android.chrome" />
+55-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:22:9-54
+55-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:22:18-51
+56        <package android:name="com.kakao.talk" />
+56-->[com.kakao.sdk:v2-common:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\2402257e5bb550e111eef9ef9b8e0e04\transformed\v2-common-2.12.0\AndroidManifest.xml:10:9-50
+56-->[com.kakao.sdk:v2-common:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\2402257e5bb550e111eef9ef9b8e0e04\transformed\v2-common-2.12.0\AndroidManifest.xml:10:18-47
+57        <package android:name="com.kakao.talk.alpha" />
+57-->[com.kakao.sdk:v2-common:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\2402257e5bb550e111eef9ef9b8e0e04\transformed\v2-common-2.12.0\AndroidManifest.xml:11:9-56
+57-->[com.kakao.sdk:v2-common:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\2402257e5bb550e111eef9ef9b8e0e04\transformed\v2-common-2.12.0\AndroidManifest.xml:11:18-53
+58        <package android:name="com.kakao.talk.sandbox" />
+58-->[com.kakao.sdk:v2-common:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\2402257e5bb550e111eef9ef9b8e0e04\transformed\v2-common-2.12.0\AndroidManifest.xml:12:9-58
+58-->[com.kakao.sdk:v2-common:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\2402257e5bb550e111eef9ef9b8e0e04\transformed\v2-common-2.12.0\AndroidManifest.xml:12:18-55
+59        <package android:name="com.kakao.onetalk" />
+59-->[com.kakao.sdk:v2-common:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\2402257e5bb550e111eef9ef9b8e0e04\transformed\v2-common-2.12.0\AndroidManifest.xml:13:9-53
+59-->[com.kakao.sdk:v2-common:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\2402257e5bb550e111eef9ef9b8e0e04\transformed\v2-common-2.12.0\AndroidManifest.xml:13:18-50
+60    </queries>
+61
+62    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+62-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:10:5-79
+62-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:10:22-76
+63
+64    <application
+64-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:45:5-110:19
+65        android:allowBackup="true"
+65-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:46:9-35
+66        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+66-->[androidx.core:core:1.8.0] C:\Users\admin\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+67        android:dataExtractionRules="@xml/data_extraction_rules"
+67-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:47:9-65
+68        android:debuggable="true"
+69        android:fullBackupContent="@xml/backup_rules"
+69-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:48:9-54
+70        android:icon="@mipmap/ic_launcher"
+70-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:49:9-43
+71        android:label="@string/app_name"
+71-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:50:9-41
+72        android:roundIcon="@mipmap/ic_launcher_round"
+72-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:51:9-54
+73        android:supportsRtl="true"
+73-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:52:9-35
+74        android:testOnly="true"
+75        android:theme="@style/Theme.LastProject"
+75-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:53:9-49
+76        android:usesCleartextTraffic="true" >
+76-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:54:9-44
+77        <activity
+77-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:56:9-58:39
+78            android:name="com.example.lastproject.member.JoinActivity"
+78-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:57:13-48
+79            android:exported="false" />
+79-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:58:13-37
+80        <activity
+80-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:60:9-62:40
+81            android:name="com.example.lastproject.customer.CustomerActivity"
+81-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:61:13-54
+82            android:exported="false" />
+82-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:62:13-37
+83        <activity
+83-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:64:9-66:40
+84            android:name="com.example.lastproject.exam.ExamActivity"
+84-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:65:13-46
+85            android:exported="false" />
+85-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:66:13-37
+86        <activity
+86-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:68:9-76:20
+87            android:name="com.example.lastproject.member.LoginActivity"
+87-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:69:13-49
+88            android:exported="true" >
+88-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:70:13-36
+89            <intent-filter>
+89-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:71:13-75:29
+90                <action android:name="android.intent.action.MAIN" />
+90-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:72:17-69
+90-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:72:25-66
+91
+92                <category android:name="android.intent.category.LAUNCHER" />
+92-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:74:17-77
+92-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:74:27-74
+93            </intent-filter>
+94        </activity>
+95        <activity
+95-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:77:9-79:39
+96            android:name="com.example.lastproject.MainActivity"
+96-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:78:13-41
+97            android:exported="false" />
+97-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:79:13-37
+98        <activity
+98-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:81:9-95:20
+99            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+99-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:82:13-70
+100            android:exported="true"
+100-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:83:13-36
+101            android:launchMode="singleTask"
+101-->[com.kakao.sdk:v2-auth:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\49acb8b69f758ad2cf9a33041f74a67e\transformed\v2-auth-2.12.0\AndroidManifest.xml:18:13-44
+102            android:theme="@style/TransparentCompat" >
+102-->[com.kakao.sdk:v2-auth:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\49acb8b69f758ad2cf9a33041f74a67e\transformed\v2-auth-2.12.0\AndroidManifest.xml:19:13-53
+103            <intent-filter>
+103-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:84:13-94:29
+104                <action android:name="android.intent.action.VIEW" />
+104-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:18:13-65
+104-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:18:21-62
+105
+106                <category android:name="android.intent.category.DEFAULT" />
+106-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:87:17-76
+106-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:87:27-73
+107                <category android:name="android.intent.category.BROWSABLE" />
+107-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:20:13-74
+107-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:20:23-71
+108
+109                <!-- Redirect URI: "kakao${NATIVE_APP_KEY}://oauth" -->
+110                <data
+110-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:22:13-43
+111                    android:host="oauth"
+111-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:92:21-41
+112                    android:scheme="kakao195d8e2f79da9f2510e52466f7c109c4" />
+112-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:22:19-40
+113            </intent-filter>
+114        </activity>
+115        <!--
+116임시 파일을 생성하고 생성한 파이을 카메라 액티비티에 보냄. 사진을 찍게되면 임시파일에 찍은 이미지 파일을 붙여서 처리를 종료함
+117        4대 컴포넌트 중에 내용 제공자 :Provider(o)
+118        카메라로 찍은 이미지를 비트맵으로 바꾸고 비트맵 크기주고 -> png(x)
+119        -->
+120        <provider
+121            android:name="androidx.core.content.FileProvider"
+121-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:102:13-62
+122            android:authorities="com.example.lastproject.fileprovider"
+122-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:103:13-64
+123            android:exported="false"
+123-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:104:13-37
+124            android:grantUriPermissions="true" >
+124-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:105:13-47
+125            <meta-data
+125-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:106:13-108:53
+126                android:name="android.support.FILE_PROVIDER_PATHS"
+126-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:107:17-67
+127                android:resource="@xml/file_path" />
+127-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:108:17-50
+128        </provider>
+129        <!-- <activity -->
+130        <!-- android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity" -->
+131        <!-- android:configChanges="orientation|screenSize" -->
+132        <!-- android:theme="@style/Theme.AppCompat.Light.Dialog" /> -->
+133        <activity
+133-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:32:9-35:78
+134            android:name="com.navercorp.nid.oauth.NidOAuthBridgeActivity"
+134-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:33:13-74
+135            android:configChanges="orientation|screenSize"
+135-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:34:13-59
+136            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" /> <!-- <activity -->
+136-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:35:13-75
+137        <!-- android:name="com.navercorp.nid.oauth.activity.NidOAuthWebViewActivity" -->
+138        <!-- android:configChanges="orientation|screenSize" -->
+139        <!-- android:screenOrientation="behind" -->
+140        <!-- android:label="OAuth2.0 by WebView" -->
+141        <!-- android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/> -->
+142        <activity
+142-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:44:9-63:20
+143            android:name="com.navercorp.nid.oauth.activity.NidOAuthCustomTabActivity"
+143-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:45:13-86
+144            android:configChanges="orientation|screenSize"
+144-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:46:13-59
+145            android:exported="true"
+145-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:47:13-36
+146            android:label="OAuth2.0 by Custom tabs"
+146-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:48:13-52
+147            android:launchMode="singleTask"
+147-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:49:13-44
+148            android:screenOrientation="behind"
+148-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:50:13-47
+149            android:theme="@style/Theme.AppCompat.NoActionBar" >
+149-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:51:13-63
+150            <intent-filter>
+150-->[com.navercorp.nid:oauth:5.3.0] C:\Users\admin\.gradle\caches\transforms-3\94cd47f1de4c29580e0d46d16f9c427b\transformed\oauth-5.3.0\AndroidManifest.xml:52:13-62:29
+151                <action android:name="android.intent.action.VIEW" />
+151-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:18:13-65
+151-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:18:21-62
+152
+153                <category android:name="android.intent.category.DEFAULT" />
+153-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:87:17-76
+153-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:87:27-73
+154                <category android:name="android.intent.category.BROWSABLE" />
+154-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:20:13-74
+154-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:20:23-71
+155                <!-- Intent URL 에서 로그인 액티비티를 실행하기 위해 설정 -->
+156                <data
+156-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:22:13-43
+157                    android:host="authorize"
+157-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:92:21-41
+158                    android:path="/"
+159                    android:scheme="naver3rdpartylogin" />
+159-->D:\Study_Android\WorkSpace\LastProject\app\src\main\AndroidManifest.xml:22:19-40
+160            </intent-filter>
+161        </activity>
+162        <activity
+162-->[com.kakao.sdk:v2-auth:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\49acb8b69f758ad2cf9a33041f74a67e\transformed\v2-auth-2.12.0\AndroidManifest.xml:10:9-15:56
+163            android:name="com.kakao.sdk.auth.TalkAuthCodeActivity"
+163-->[com.kakao.sdk:v2-auth:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\49acb8b69f758ad2cf9a33041f74a67e\transformed\v2-auth-2.12.0\AndroidManifest.xml:11:13-67
+164            android:configChanges="orientation|screenSize|keyboardHidden"
+164-->[com.kakao.sdk:v2-auth:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\49acb8b69f758ad2cf9a33041f74a67e\transformed\v2-auth-2.12.0\AndroidManifest.xml:12:13-74
+165            android:exported="false"
+165-->[com.kakao.sdk:v2-auth:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\49acb8b69f758ad2cf9a33041f74a67e\transformed\v2-auth-2.12.0\AndroidManifest.xml:13:13-37
+166            android:launchMode="singleTask"
+166-->[com.kakao.sdk:v2-auth:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\49acb8b69f758ad2cf9a33041f74a67e\transformed\v2-auth-2.12.0\AndroidManifest.xml:14:13-44
+167            android:theme="@style/TransparentCompat" />
+167-->[com.kakao.sdk:v2-auth:2.12.0] C:\Users\admin\.gradle\caches\transforms-3\49acb8b69f758ad2cf9a33041f74a67e\transformed\v2-auth-2.12.0\AndroidManifest.xml:15:13-53
+168
+169        <provider
+169-->[androidx.emoji2:emoji2:1.2.0] C:\Users\admin\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+170            android:name="androidx.startup.InitializationProvider"
+170-->[androidx.emoji2:emoji2:1.2.0] C:\Users\admin\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+171            android:authorities="com.example.lastproject.androidx-startup"
+171-->[androidx.emoji2:emoji2:1.2.0] C:\Users\admin\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+172            android:exported="false" >
+172-->[androidx.emoji2:emoji2:1.2.0] C:\Users\admin\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+173            <meta-data
+173-->[androidx.emoji2:emoji2:1.2.0] C:\Users\admin\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+174                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+174-->[androidx.emoji2:emoji2:1.2.0] C:\Users\admin\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+175                android:value="androidx.startup" />
+175-->[androidx.emoji2:emoji2:1.2.0] C:\Users\admin\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+176            <meta-data
+176-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\admin\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+177                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+177-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\admin\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+178                android:value="androidx.startup" />
+178-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\admin\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+179        </provider>
+180    </application>
+181
+182</manifest>
