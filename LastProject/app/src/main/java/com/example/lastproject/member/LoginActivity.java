@@ -1,4 +1,4 @@
-package com.example.lastproject;
+package com.example.lastproject.member;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.example.conn.ApiClient;
 import com.example.conn.CommonMethod;
+import com.example.lastproject.R;
 import com.kakao.sdk.auth.model.OAuthToken;
 import com.kakao.sdk.common.KakaoSdk;
 import com.kakao.sdk.user.UserApiClient;
@@ -38,7 +39,7 @@ import kotlin.jvm.functions.Function2;
 
 public class LoginActivity extends AppCompatActivity {
    EditText id, pw;
-    Button login;
+    Button login, join;
     ImageView imgv_kakao_login;
     NidOAuthLoginButton buttonOauthLoginImg;
 
@@ -80,6 +81,12 @@ public class LoginActivity extends AppCompatActivity {
         pw = findViewById(R.id.edt_pw);
         login = findViewById(R.id.btn_login);
         imgv_kakao_login = findViewById(R.id. imgv_kakao_login);
+        join = findViewById(R.id.btn_join);
+
+        join.setOnClickListener(v -> {
+            Intent intent= new Intent(this, JoinActivity.class);
+            startActivity(intent);
+                });
 
 
         /*callback은 대부분 인터페이스  (new 치고 엔터) */
