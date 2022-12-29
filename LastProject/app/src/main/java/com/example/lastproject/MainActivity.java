@@ -16,17 +16,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ApiClient.setBASEURL("http://192.168.0.45/middle/"); //팀플할때 자기것으로 ip바꾸면된다.
-
+        // 팀프로젝트 할때 자기것으로 바꾸기.
+        ApiClient.setBASEURL("http:/192.168.0.45/middle/middle/");
 
         new CommonMethod().setParams("data" , "KYM")
         .sendGet("andVo", new CommonMethod.CallBackResult() {
             @Override
             public void result(boolean isResult, String data) {
-            if(isResult) {
-                Log.d("로그", "result: "+data);
-            }
+                if(isResult){
+                    Log.d("로그", "result: "  +  data);
+                }
             }
         });
+
+
     }
 }
